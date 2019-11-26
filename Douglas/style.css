@@ -1,16 +1,39 @@
+body {
+    background-image: url(Imagem/bandeira.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .container {
     margin: 0 auto;
     display: flex;
-    border: 1px solid #ccc;
     justify-content: center;
 }
 
 .box {
     align-items: center;
-    display: absolute;
+    width: 900px;
+    height: 500px;
+    border: solid 3px black;
 }
 
 #output {
-    height: 30vmax;
-    width: 30vmax;
+    height: 40vmax;
+}
+
+#botoes {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#texto {
+    position: absolute;
+    text-align: center;
+    padding-left: 60px;
+    bottom: 0px;
+    color: #FFFFFF;
+    font-size: 40px;
 }
