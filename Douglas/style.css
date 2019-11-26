@@ -1,0 +1,16 @@
+.container {
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #ccc;
+    justify-content: center;
+}
+
+.box {
+    align-items: center;
+    display: absolute;
+}
+
+#output {
+    height: 30vmax;
+    width: 30vmax;
+}
