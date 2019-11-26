@@ -53,14 +53,14 @@ function adicionarImagem(event) {
     imgMeme.src = URL.createObjectURL(event.target.files[0]);
 }
 
-textoCima.addEventListener('keydown', parteCima);
+textoCima.addEventListener('input', parteCima);
 function parteCima() {
     let selecionarTextoNoMeme = document.getElementById('escritoCima')
     selecionarTextoNoMeme.innerHTML = textoCima.value
     if (selecionarTextoNoMeme.innerHTML.length > 100) alert('Você não está escrevendo uma bíblia!')
 }
 
-textoBaixo.addEventListener('keydown', parteBaixo)
+textoBaixo.addEventListener('input', parteBaixo)
 function parteBaixo() {
     let selecionarTextoNoMeme = document.getElementById('escritoBaixo')
     selecionarTextoNoMeme.innerHTML = textoBaixo.value
