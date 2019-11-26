@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meme-Generator - PHTF</title>
+    <link rel="stylesheet" href="arquivoCSS.css">
+</head>
+
+<body>
+    <header>
+        <h1> Gerador de memes. Por: Pedro Tófani</h1>
+        <h2>Fique à vontade para criar e compartilhar a zoeira!</h2>
+    </header>
+    <div class="conteudo">
+        <div class="ladoEsquerdo">
+            <p>Qual dessas imagens gostaria de usar?</p>
+            <div id="imagensProntas">
+                <img class="imgPequenas">
+                <img class="imgPequenas">
+                <img class="imgPequenas">
+            </div>
+            <form>
+                Ou então escolha a imagem: <br><input type="file" id="arquivo"></br>
+                Texto acima: <br><input type="text" id="textoCima" value=""></br>
+                Texto abaixo: <br><input type="text" id="textoBaixo" value=""></br>
+            </form>
+            <p>Selecione a cor da borda</p>
+            <select id="corBorda">
+                <option value="yellow">Amarelo</option>
+                <option value="blue">Azul</option>
+                <option value="black">Preto</option>
+                <option value="green">Verde</option>
+            </select>
+            <p>Selecione a cor do texto</p>
+            <select id="corTexto">
+                <option value="white">Branco</option>
+                <option value="blue">Azul</option>
+                <option value="black">Preto</option>
+                <option value="green">Verde</option>
+            </select>
+            <p>Tamanho da letra</p>
+            <button id="letraCima">↑</button>
+            <button id="letraBaixo">↓</button>
+        </div>
+        <div id="boxConteudo">
+            <img src='' id='imgMeme'>
+            <div class='escrito' id='escritoCima'>opa</div>
+            <div class='escrito' id='escritoBaixo'>oi</div>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
