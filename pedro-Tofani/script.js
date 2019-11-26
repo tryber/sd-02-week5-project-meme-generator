@@ -12,7 +12,10 @@ let bordaSelecionar = document.getElementById('boxConteudo');
 let imgMeme = document.getElementById('imgMeme');
 let corLetra = document.getElementById('corTexto');
 let selecionarTexto = document.getElementsByClassName('escrito')
-
+let clickLetraCima = document.getElementById('letraCima')
+let clickLetraBaixo = document.getElementById('letraBaixo')
+selecionarTexto[0].style.fontSize = '30px';
+selecionarTexto[1].style.fontSize = '30px';
 
 img1.addEventListener('click', setImgMeme);
 img2.addEventListener('click', setImgMeme);
@@ -30,4 +33,17 @@ corLetra.addEventListener('change', trocarCorLetra);
 function trocarCorLetra() {
     selecionarTexto[0].style.color = this.value;
     selecionarTexto[1].style.color = this.value;
+}
+
+clickLetraBaixo.addEventListener('click', tamanhoLetra);
+clickLetraCima.addEventListener('click', tamanhoLetra);
+function tamanhoLetra() {
+    if (this.id == 'letraCima') {
+        selecionarTexto[0].style.fontSize = (parseInt(selecionarTexto[0].style.fontSize) + 10 + 'px');
+        selecionarTexto[1].style.fontSize = (parseInt(selecionarTexto[1].style.fontSize) + 10 + 'px');
+    };
+    if (this.id == 'letraBaixo') {
+        selecionarTexto[0].style.fontSize = (parseInt(selecionarTexto[0].style.fontSize) - 10 + 'px');
+        selecionarTexto[1].style.fontSize = (parseInt(selecionarTexto[1].style.fontSize) - 10 + 'px');
+    }
 }
