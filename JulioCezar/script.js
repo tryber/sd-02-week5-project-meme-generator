@@ -1,8 +1,10 @@
 window.onload = function () {
 
-
-    var input = document.getElementById("input_text");    
-    input.addEventListener('keydown', updateTempo);  
+  let input = document.getElementById('input_text');
+  input.addEventListener('keyup', updateText);
+  let imagem = document.getElementById('input_img');
+  imagem.addEventListener('change', adicionarImagem);
+  
     
     
 
@@ -15,14 +17,17 @@ window.onload = function () {
 
 
 }
-function updateTempo(){
-    var setIntervalId = setInterval(updateText(setIntervalId), 500);
+
+function updateText () {
+
+  let inputText = document.getElementById('input_text').value;
+  document.getElementById('span_meme_text').innerHTML = inputText;
+  
 }
 
-function updateText (processo){
-
-    var inputText = document.getElementById("input_text").value;
-    document.getElementById("paragraph_text").innerHTML = inputText;
-    clearInterval (processo);
+function adicionarImagem(event){
+  
+  let imagem = document.getElementById('imagem');
+  imagem.src = URL.createObjectURL(event.target.files[0]);
 
 }

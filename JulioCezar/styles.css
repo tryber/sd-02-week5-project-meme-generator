@@ -1,0 +1,33 @@
+body {
+
+  margin: 0;
+  padding: 20px;
+  font-size: 30px;
+}
+
+#id_imagem_div {
+
+  position: relative;
+  width: 1920px;
+  height: 1200px;
+  border-style: double;
+  border: solid;
+}
+
+#imagem {    
+
+  width: 1920px;
+  height: 1200px;     
+}
+
+#span_meme_text {
+
+  position: absolute;
+  top: 1000px;
+  left: 30px;   
+  font-size: 150px;
+  color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  word-break: break-word;
+}
+}
