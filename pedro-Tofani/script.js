@@ -10,6 +10,8 @@ let letraBaixo = document.getElementById('letraBaixo');
 let corBorda = document.getElementById('corBorda');
 let bordaSelecionar = document.getElementById('boxConteudo');
 let imgMeme = document.getElementById('imgMeme');
+let corLetra = document.getElementById('corTexto');
+let selecionarTexto = document.getElementsByClassName('escrito')
 
 
 img1.addEventListener('click', setImgMeme);
@@ -22,4 +24,10 @@ function setImgMeme() {
 corBorda.addEventListener('change', colorirBorda);
 function colorirBorda() {
     bordaSelecionar.style.borderColor = this.value;
+}
+
+corLetra.addEventListener('change', trocarCorLetra);
+function trocarCorLetra() {
+    selecionarTexto[0].style.color = this.value;
+    selecionarTexto[1].style.color = this.value;
 }
