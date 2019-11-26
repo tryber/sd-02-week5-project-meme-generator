@@ -47,3 +47,8 @@ function tamanhoLetra() {
         selecionarTexto[1].style.fontSize = (parseInt(selecionarTexto[1].style.fontSize) - 10 + 'px');
     }
 }
+
+imagem.addEventListener('change', adicionarImagem);
+function adicionarImagem(event){
+    imgMeme.src = URL.createObjectURL(event.target.files[0]);
+}
