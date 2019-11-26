@@ -49,6 +49,20 @@ function tamanhoLetra() {
 }
 
 imagem.addEventListener('change', adicionarImagem);
-function adicionarImagem(event){
+function adicionarImagem(event) {
     imgMeme.src = URL.createObjectURL(event.target.files[0]);
 }
+
+textoCima.addEventListener('keydown', parteCima);
+function parteCima() {
+    let selecionarTextoNoMeme = document.getElementById('escritoCima')
+    selecionarTextoNoMeme.innerHTML = textoCima.value
+}
+
+textoBaixo.addEventListener('keydown', parteBaixo)
+function parteBaixo() {
+    let selecionarTextoNoMeme = document.getElementById('escritoBaixo')
+    selecionarTextoNoMeme.innerHTML = textoBaixo.value
+
+}
+
