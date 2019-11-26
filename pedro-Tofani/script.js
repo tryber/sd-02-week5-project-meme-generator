@@ -39,8 +39,10 @@ clickLetraBaixo.addEventListener('click', tamanhoLetra);
 clickLetraCima.addEventListener('click', tamanhoLetra);
 function tamanhoLetra() {
     if (this.id == 'letraCima') {
-        selecionarTexto[0].style.fontSize = (parseInt(selecionarTexto[0].style.fontSize) + 10 + 'px');
-        selecionarTexto[1].style.fontSize = (parseInt(selecionarTexto[1].style.fontSize) + 10 + 'px');
+        if (selecionarTexto[0].offsetHeight < 380) {
+            selecionarTexto[0].style.fontSize = (parseInt(selecionarTexto[0].style.fontSize) + 10 + 'px');
+            selecionarTexto[1].style.fontSize = (parseInt(selecionarTexto[1].style.fontSize) + 10 + 'px');
+        }
     };
     if (this.id == 'letraBaixo') {
         selecionarTexto[0].style.fontSize = (parseInt(selecionarTexto[0].style.fontSize) - 10 + 'px');
