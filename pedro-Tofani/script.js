@@ -57,12 +57,14 @@ textoCima.addEventListener('keydown', parteCima);
 function parteCima() {
     let selecionarTextoNoMeme = document.getElementById('escritoCima')
     selecionarTextoNoMeme.innerHTML = textoCima.value
+    if (selecionarTextoNoMeme.innerHTML.length > 100) alert('Você não está escrevendo uma bíblia!')
 }
 
 textoBaixo.addEventListener('keydown', parteBaixo)
 function parteBaixo() {
     let selecionarTextoNoMeme = document.getElementById('escritoBaixo')
     selecionarTextoNoMeme.innerHTML = textoBaixo.value
-
+    if (selecionarTextoNoMeme.innerHTML.length > 100) alert('Você não está escrevendo uma bíblia!');
 }
+
 
