@@ -30,10 +30,20 @@ h1 {
 }
 
 #texto {
+    bottom: 0px;
+    word-break: break-all;
+}
+
+#texto1 {
+    top: 150px;
+    word-break: break-all;
+}
+
+.estilo {
     position: absolute;
     text-align: center;
     padding-left: 60px;
-    bottom: 0px;
     color: #FFFFFF;
     font-size: 40px;
+    max-width: 820px;
 }
