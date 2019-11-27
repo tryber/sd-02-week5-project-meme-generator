@@ -101,26 +101,43 @@ window.onload = function() {
     let cor = document.getElementById('cores');
 
     cor.addEventListener('click', function() {
-        if (cor.selectedIndex == 1) {
-            escreve.style.color = 'white';
-            escreve2.style.color = 'white';
-        } else if (cor.selectedIndex == 2) {
-            escreve.style.color = 'black';
-            escreve2.style.color = 'black';
-            escreve.style.textShadow = '3px 3px white';
-            escreve2.style.textShadow = '3px 3px white';
-        } else if (cor.selectedIndex == 3) {
-            escreve.style.color = 'yellow';
-            escreve2.style.color = 'yellow';
-        } else if (cor.selectedIndex == 4) {
-            escreve.style.color = 'red';
-            escreve2.style.color = 'red';
-        } else if (cor.selectedIndex == 5) {
-            escreve.style.color = 'green';
-            escreve2.style.color = 'green';
-        } else if (cor.selectedIndex == 6) {
-            escreve.style.color = 'blue';
-            escreve2.style.color = 'blue';
+        switch (cor.selectedIndex) {
+            case 1:
+                escreve.style.color = 'white';
+                escreve2.style.color = 'white';
+                voltaSombra();
+                break;
+            case 2:
+                escreve.style.color = 'black';
+                escreve2.style.color = 'black';
+                escreve.style.textShadow = '3px 3px white';
+                escreve2.style.textShadow = '3px 3px white';
+                break;
+            case 3:
+                escreve.style.color = 'yellow';
+                escreve2.style.color = 'yellow';
+                voltaSombra();
+                break;
+            case 4:
+                escreve.style.color = 'red';
+                escreve2.style.color = 'red';
+                voltaSombra();
+                break;
+            case 5:
+                escreve.style.color = 'green';
+                escreve2.style.color = 'green';
+                voltaSombra();
+                break;
+            case 6:
+                escreve.style.color = 'blue';
+                escreve2.style.color = 'blue';
+                voltaSombra();
+                break;
         }
     })
+
+    function voltaSombra() {
+        escreve.style.textShadow = '3px 3px black';
+        escreve2.style.textShadow = '3px 3px black';
+    }
 }
