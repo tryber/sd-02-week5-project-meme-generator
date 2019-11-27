@@ -11,6 +11,8 @@ body {
 }
 
 .box {
+    display: absolute;
+    align-content: center;
     width: 900px;
     height: 500px;
     border: solid 5px black;
@@ -118,4 +120,7 @@ p {
 .border4 {
     border: solid 5px black;
     background-color: white;
+    position: absolute;
+    top: 400px;
+    left: 8px;
 }
