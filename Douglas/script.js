@@ -107,6 +107,8 @@ window.onload = function() {
         } else if (cor.selectedIndex == 2) {
             escreve.style.color = 'black';
             escreve2.style.color = 'black';
+            escreve.style.textShadow = '3px 3px white';
+            escreve2.style.textShadow = '3px 3px white';
         } else if (cor.selectedIndex == 3) {
             escreve.style.color = 'yellow';
             escreve2.style.color = 'yellow';
