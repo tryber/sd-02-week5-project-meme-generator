@@ -1,0 +1,30 @@
+body {
+    background-image: url("background.jpg");
+}
+
+.titulo {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Funny\ &\ Cute";
+    src: url("Funny\ &\ Cute.ttf") format("truetype");
+    color: white;
+}
+
+#file {
+    padding-left: 350px;
+}
+
+#explica {
+    font-family: sans-serif;
+    text-align: center;
+    color:black;
+    font-size: 20px;
+}
+
+.foto {
+    border: solid white 3px;
+    background: white;
+    padding: 40px;
+    width: 90%;
+    margin: auto;
+}
