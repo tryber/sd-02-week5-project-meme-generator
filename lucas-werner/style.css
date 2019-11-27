@@ -1,13 +1,22 @@
+#page-wrap {
+    padding: 10px;
+    margin: 0 auto;
+    background-image: url(img/sergio-malandro.jpeg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .container {
-    margin-top: 10px;
+    margin-top: 100px;
     border: solid 4px black;
     width: 450px;
     height: 450px;
-    align-content: center;
     position: relative;
+    margin: 0 auto;
 }
 .meme-txt {
-    position: absolute; 
+    position: absolute;
+    width: 450px; 
     margin: 2px 0;
     padding: 0 1px;
     font-family: impact;
@@ -24,7 +33,46 @@
     0px -2px 0 #000,
     -2px 0px 0 #000,
     2px 2px 5px #000;
+    word-break: break-all;
 }
   #upper-txt {
     top: 0;
-  }
+}
+  #lower-txt {
+    bottom: 0;
+}
+  #title-txt {
+    font-family: impact;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0px 2px 0 #000,
+    2px 0px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 2px 5px #000;
+}
+.texto {
+    font-family: impact;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0px 2px 0 #000,
+    2px 0px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 2px 5px #000;
+}
+.form-content {
+    margin-top: 20px;
+}

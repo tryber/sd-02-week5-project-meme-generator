@@ -1,10 +1,10 @@
 let selecionarImagem = document.getElementById("pick-img");
-selecionarImagem.addEventListener ('change', function() {
-    criarImagem () })
+selecionarImagem.addEventListener ('change', criarImagem);
 
 function criarImagem () {
     
     let imgEscolhida = document.getElementById("print-img");
+        console.log(event.target.files[0]);
         imgEscolhida.src = URL.createObjectURL(event.target.files[0]);
         imgEscolhida.style.width = "450px";
         imgEscolhida.style.height = "450px";
@@ -12,13 +12,24 @@ function criarImagem () {
     }
 
 
-let selecionarTexto = document.getElementById("insert-txt");
+let selecionarTextoCima = document.getElementById("insert-upper-txt");
    
-selecionarTexto.addEventListener ('input', function() {
-    criarTexto() })
+selecionarTextoCima.addEventListener ('input', function() {
+    criarTextoCima() })
 
-function criarTexto () {
+function criarTextoCima () {
     
-   document.getElementById("upper-txt").innerHTML = selecionarTexto.value
+   document.getElementById("upper-txt").innerHTML = selecionarTextoCima.value
+
+}
+
+let selecionarTextoBaixo = document.getElementById("insert-lower-txt");
+   
+selecionarTextoBaixo.addEventListener ('input', function() {
+    criarTextoBaixo() })
+
+function criarTextoBaixo () {
+    
+   document.getElementById("lower-txt").innerHTML = selecionarTextoBaixo.value
 
 }
