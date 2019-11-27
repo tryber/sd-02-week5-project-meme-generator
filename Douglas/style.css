@@ -5,16 +5,15 @@ body {
 }
 
 .container {
-    margin: 0 auto;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
 }
 
 .box {
-    align-items: center;
     width: 900px;
     height: 500px;
-    border: solid 3px black;
+    border: solid 5px black;
 }
 
 #botoes {
@@ -53,7 +52,7 @@ h1 {
 .inicio {
     font size: 10px;
     font-family: 'Calistoga', cursive;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 p {
@@ -63,5 +62,60 @@ p {
 #diretorio {
     font size: 10px;
     font-family: 'Calistoga', cursive;
-    color: #000000;
+    color: #FFFFFF;
+}
+
+.meme {
+    width: 60px;
+    height: 60px;
+    border: solid black 5px;
+}
+
+.sugestao {
+    padding: 0 0;
+    border-style: none;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 10px;
+    background-color: black;
+}
+
+#h21 {
+    position: absolute;
+    display: block;
+    left: 50px;
+    top: 200px;
+    color: white;
+}
+
+.local {
+    top: 150px;
+    position: relative;
+    right: 210px;
+}
+
+#h22 {
+    position: absolute;
+    display: block;
+    left: 50px;
+    top: 350px;
+    color: white;
+}
+
+.border1 {
+    border: double blue 3px;
+}
+
+.border2 {
+    border: blueviolet dashed 3px;
+}
+
+.border3 {
+    border: inset chocolate 3px;
+}
+
+.border4 {
+    border: solid 5px black;
+    background-color: white;
 }

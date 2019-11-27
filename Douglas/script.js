@@ -54,5 +54,47 @@ window.onload = function() {
             escreve2.style.fontSize = (parseInt(escreve2.style.fontSize) - 10 + 'px');
         }
     })
+    let mem1 = document.getElementById('mem1');
+    mem1.addEventListener('click', function() {
+        let x = 'meme1'
+        sugestion(mem1, x)
+        image.alt = 'Garoto Rico Branco'
+    })
+    let mem2 = document.getElementById('mem2');
+    mem2.addEventListener('click', function() {
+        let x = 'meme2'
+        sugestion(mem2, x)
+    })
+    let mem3 = document.getElementById('mem3');
+    mem3.addEventListener('click', function() {
+        let x = 'meme3'
+        sugestion(mem3, x)
 
+    })
+
+    function sugestion(mem1, x) {
+        let image = document.getElementById('pegarTag');
+        let meme = document.getElementById(x);
+        image.src = meme.src;
+        image.alt = "gerador de memes";
+        image.style.width = "900px";
+        image.style.height = "500px";
+    }
+    let arrayBordas = document.getElementsByClassName('local');
+    arrayBordas[0].addEventListener('click', function() {
+        let box = document.getElementsByClassName('box');
+        box[0].style.border = "double blue 5px";
+    })
+    arrayBordas[1].addEventListener('click', function() {
+        let box = document.getElementsByClassName('box');
+        box[0].style.border = 'blueviolet dashed 5px';
+    })
+    arrayBordas[2].addEventListener('click', function() {
+        let box = document.getElementsByClassName('box');
+        box[0].style.border = 'inset chocolate 5px';
+    })
+    arrayBordas[3].addEventListener('click', function() {
+        let box = document.getElementsByClassName('box');
+        box[0].style.border = 'solid 5px black';
+    })
 }
