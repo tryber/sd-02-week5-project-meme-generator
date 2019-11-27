@@ -6,8 +6,8 @@ function criarImagem () {
     
     let imgEscolhida = document.getElementById("print-img");
         imgEscolhida.src = URL.createObjectURL(event.target.files[0]);
-        imgEscolhida.style.width = "600px";
-        imgEscolhida.style.height = "600px";
+        imgEscolhida.style.width = "450px";
+        imgEscolhida.style.height = "450px";
          
     }
 
@@ -19,6 +19,6 @@ selecionarTexto.addEventListener ('input', function() {
 
 function criarTexto () {
     
-   document.getElementById("print-txt").innerHTML = selecionarTexto.value
+   document.getElementById("upper-txt").innerHTML = selecionarTexto.value
 
 }

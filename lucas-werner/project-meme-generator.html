@@ -5,37 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Gerador de Memes</title>
 </head>
 
 
 <body>
-    <header>
-<!-- titulo do site -->
+<header>
     <div id="title">
         <h1>Gerador de Memes</h1>
+        <h4>Por <a href="https://lucas-werner.github.io/" target="_blank">Lucas Werner </a></h4> 
     </div>
     </header>
-<!-- caixa para selecionar imagem -->
 <section>
-    <div>
-    Selecione uma imagem: <input id="pick-img" type="file" name="img" accept="image/*" >    
-    </div> 
-<!-- caixa de texto a ser inserido sobre o meme -->
-    <div>
-    Insira o texto: <input id="insert-txt" type="text" name="fname"/>
-    </div>
+    <form class="form-content"></form>
+    <p class="texto">Selecione uma imagem: </p><input id="pick-img"
+    type="file" name="img" accept="image/*" > <br> <br>   
+    <p class="texto">Insira o texto: </p><input id="insert-txt" type="text" name="fname"/>
+    </form>
 <section>
-<!-- enviar inputs para fazer meme -->
-    <div>
-    <img id="print-img"/>
-    <p id="print-txt"> </p>
-
+    <div class="container">
+        <img id="print-img"/>
+         <div class="meme-txt" id="upper-txt"> </div>
     </div>
 </section>
-
-
-
 
 <script type="text/javascript" src="script.js">
 </script>

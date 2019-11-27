@@ -1,4 +1,30 @@
-body {
-    max-width: 600px;
-    margin: auto;
+.container {
+    margin-top: 10px;
+    border: solid 4px black;
+    width: 450px;
+    height: 450px;
+    align-content: center;
+    position: relative;
+}
+.meme-txt {
+    position: absolute; 
+    margin: 2px 0;
+    padding: 0 1px;
+    font-family: impact;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0px 2px 0 #000,
+    2px 0px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 2px 5px #000;
+}
+  #upper-txt {
+    top: 0;
   }
