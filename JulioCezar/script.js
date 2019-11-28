@@ -1,33 +1,33 @@
-window.onload = function () {
+/* global window . */
 
-  let input = document.getElementById('input_text');
-  input.addEventListener('keyup', updateText);
-  let imagem = document.getElementById('input_img');
+window.onload = function() {
+
+  const inputDown = document.getElementById('input_textDown');
+  inputDown.addEventListener('keyup', updateTextDown);
+  const inputUp = document.getElementById('input_textUp');
+  inputUp.addEventListener('keyup', updateTextUp);
+  const imagem = document.getElementById('input_img');
   imagem.addEventListener('change', adicionarImagem);
-  
-    
-    
-
-   
-
-
-
-
-
-
 
 }
 
-function updateText () {
+function updateTextDown() {
 
-  let inputText = document.getElementById('input_text').value;
-  document.getElementById('span_meme_text').innerHTML = inputText;
+  const inputText = document.getElementById('input_textDown').value;
+  document.getElementById('span_meme_text_down').innerHTML = inputText;
   
 }
 
-function adicionarImagem(event){
+function updateTextUp() {
+
+  const inputText = document.getElementById('input_textUp').value;
+  document.getElementById('span_meme_text_up').innerHTML = inputText;
   
-  let imagem = document.getElementById('imagem');
+}
+
+function adicionarImagem(event) {
+  
+  const imagem = document.getElementById('imagem');
   imagem.src = URL.createObjectURL(event.target.files[0]);
 
 }

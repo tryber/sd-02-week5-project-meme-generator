@@ -8,26 +8,37 @@ body {
 #id_imagem_div {
 
   position: relative;
-  width: 1920px;
-  height: 1200px;
+  width: 1000px;
+  height: 800px;
   border-style: double;
   border: solid;
 }
 
 #imagem {    
 
-  width: 1920px;
-  height: 1200px;     
+  width: 1000px;
+  height: 800px;     
 }
 
-#span_meme_text {
+#span_meme_text_down {
 
   position: absolute;
-  top: 1000px;
+  top: 500px;
   left: 30px;   
-  font-size: 150px;
-  color: black;
+  font-size: 60px;
+  color: rgb(104, 78, 78);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   word-break: break-word;
+  text-shadow: 2px 2px rgb(255, 255, 255);
 }
+
+#span_meme_text_up {
+
+  position: absolute;
+  left: 30px;   
+  font-size: 60px;
+  color: rgb(83, 56, 56);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  word-break: break-word;
+  text-shadow: 2px 2px rgb(255, 255, 255);
 }
