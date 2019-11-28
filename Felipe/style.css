@@ -12,6 +12,16 @@
     src: url("../Felipe/font-family/UndergroundNF.ttf");
 }
 
+@font-face {
+    font-family: cowboy;
+    src: url("../Felipe/font-family/Cowboys.ttf");
+}
+
+@font-face {
+    font-family: corleone;
+    src: url("../Felipe/font-family/Corleone.ttf");
+}
+
 body {
     background-image: url(./images/memesbackground.jpg);
     background-size: 108%;
@@ -40,6 +50,15 @@ body {
     color: violet;
 }
 
+.titulo1 {
+    margin-left: 10px;
+}
+
+.titulo2 {
+    font-family: corleone;
+    font-size: 4em;
+}
+
 .titulo3 {
     font-size: 50px;
     font-family: nfsunder;
@@ -58,15 +77,47 @@ body {
 }
 
 .caixaForm {
-    border: 2px solid yellow;
     text-align: center;
     font-size: 30px;
     font-weight: bolder;
 }
 
+.tituloForm {
+    font-family: cowboy;
+    font-size: 1.5em;
+}
+
 .caixaTexto {
     width: 900px;
-    height: 50px;
+    height: 70px;
+    font-size: 2em;
+}
+
+.side {
+    border: 2px solid red;
+    background-color: white;
+    float: right;
+    margin: 20px 10px 10px 10px;
+    width: 20%;
+    text-align: center;
+}
+
+.art {
+    border-top: 12px groove red;
+    border-left: 12px groove red;
+    border-bottom: 12px ridge red;
+    border-right: 12px ridge red;
+    float: left;
+    margin: 20px 5px 20px 20px;
+    width: 75%;
+    background-color: rgba( 255, 255, 255, 0.85);
+    background-blend-mode: lighten;
+}
+
+.selecFoto {
+    font-family: corleone;
+    font-size: 1.5em;
+    letter-spacing: 2px;
 }
 
 .caixaBotao {
@@ -77,34 +128,15 @@ body {
     border: 2px solid blue;
 }
 
-.side {
-    border: 2px solid red;
-    background-color: white;
-    float: right;
-    margin: 20px 10px 10px 10px;
-    width: 20%;
-}
-
-.art {
-    border-top: 12px groove red;
-    border-left: 12px groove red;
-    border-bottom: 12px ridge red;
-    border-right: 12px ridge red;
-    background-color: white;
-    opacity: 85%;
-    float: left;
-    margin: 20px 5px 20px 20px;
-    width: 75%;
+.caixaPaiDentroArt {
+    border: 20px groove blue;
 }
 
 .caixaDentroArt {
-    width: fit-content;
     border: 15px dashed blue;
 }
 
-.paiImagemTotal {
-    width: fit-content;
-}
+.paiImagemTotal {}
 
 .imagemTotal {
     text-align: center;
@@ -115,7 +147,14 @@ body {
 .imagemUnica {
     width: 70%;
     border: 10px groove yellow;
-    border-radius: 5%;
+}
+
+.textoNaImagem {
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    bottom: 300px;
+    left: 300px;
 }
 
 .rodape {
