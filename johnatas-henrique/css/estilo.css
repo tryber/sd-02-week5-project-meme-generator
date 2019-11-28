@@ -5,18 +5,18 @@
 
 @font-face {
   font-family: animeace , sans-serif;
-  src: url( "../fonts/animeace2_reg.ttf" );
+  src: url( '../fonts/animeace2_reg.ttf' );
 }
 
 @font-face {
   font-family: animeace , sans-serif;
-  src: url( "../fonts/animeace2_bld.ttf" );
+  src: url( '../fonts/animeace2_bld.ttf' );
   font-weight: 700;
 }
 
 body {
   font-family: animeace , sans-serif;
-  background-image: url( "../imagens/bg.jpg" );
+  background-image: url( '../imagens/bg.jpg' );
   background-color: rgba( 255 , 255 , 255 , 0.45 );
   background-blend-mode: lighten;
 }
@@ -26,7 +26,7 @@ body {
   -webkit-text-stroke: 1px black;
   font-size: 3em;
   color: white;
-  text-shadow: 3px 3px 0 black , -1px -1px 0 black ,
+  text-shadow: 3px 3px 0 black , -1px -1px 0 black , 
     1px -1px 0 black , -1px 1px 0 black , 1px 1px 0 black;
 }
 
@@ -47,7 +47,7 @@ body {
   font-weight: 700;
   -webkit-text-stroke: 1px black;
   color: white;
-  text-shadow: 3px 3px 0 black , -1px -1px 0 black ,
+  text-shadow: 3px 3px 0 black , -1px -1px 0 black , 
     1px -1px 0 black , -1px 1px 0 black , 1px 1px 0 black;
 }
 
@@ -111,6 +111,6 @@ body {
   font-size: 2em;
   -webkit-text-stroke: 1px black;
   color: white;
-  text-shadow: 3px 3px 0 black , -1px -1px 0 black ,
+  text-shadow: 3px 3px 0 black , -1px -1px 0 black , 
     1px -1px 0 black , -1px 1px 0 black , 1px 1px 0 black;
 }

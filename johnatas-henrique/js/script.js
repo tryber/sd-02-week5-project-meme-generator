@@ -1,4 +1,4 @@
-/*eslint-env browser*/
+/* eslint-env browser */
 const divTextoBaixo = document.querySelector('.texto-baixo');
 const carregarTexto = document.querySelector('.caixa-texto-input');
 const recebeTexto = document.createElement('p');
