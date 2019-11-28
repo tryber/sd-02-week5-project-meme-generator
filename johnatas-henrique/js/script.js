@@ -1,11 +1,16 @@
 divTextoBaixo = document.querySelector('.texto-baixo');
-carregaTexto = document.querySelector('.caixa-texto-input');
+carregarTexto = document.querySelector('.caixa-texto-input');
 recebeTexto = document.createElement('p');
 recebeTexto.classList += 'texto-meme-baixo';
-
 divTextoBaixo.appendChild(recebeTexto);
 
-carregaTexto.addEventListener('keyup', function() {
-    recebeTexto.innerHTML = carregaTexto.value;
-    return recebeTexto.innerHTML;
+carregarTexto.addEventListener('keyup', function() {
+    recebeTexto.innerHTML = carregarTexto.value;
+});
+
+recebeFoto = document.getElementById('img-foto');
+botaoFoto = document.getElementById('botao-foto');
+
+botaoFoto.addEventListener('change', function(event) {
+    recebeFoto.src = URL.createObjectURL(event.target.files[0]);
 });
