@@ -2,6 +2,11 @@
     clear: both;
 }
 
+@font-face {
+    font-family: android7;
+    src: url("../Felipe/font-family/membra.ttf");
+}
+
 body {
     background-image: url(./images/memesbackground.jpg);
     background-size: 108%;
@@ -11,14 +16,32 @@ body {
 }
 
 .header {
-    border: 2px solid red;
-    background-color: white;
-    text-align: left;
-    float: inline-start;
+    margin-top: 50px;
 }
 
 .caixaTitulo1 {
-    border: 2px solid blue;
+    ,
+    width: 100%;
+    text-align: center;
+}
+
+.titulo1 {
+    width: 100%;
+}
+
+.caixaFilhoTitulo1 {
+    width: fit-content;
+    font-family: android7;
+    font-size: 100px;
+    color: violet;
+}
+
+.titulo3 {
+    font-size: 40px;
+}
+
+.caixaTitulo3 {
+    border: 2px solid yellow;
     text-align: center;
 }
 
@@ -31,23 +54,40 @@ body {
 }
 
 .art {
-    border: 2px solid red;
+    border-top: 12px groove red;
+    border-left: 12px groove red;
+    border-bottom: 12px ridge red;
+    border-right: 12px ridge red;
     background-color: white;
     float: left;
     margin: 20px 5px 20px 20px;
     width: 75%;
 }
 
+.caixaDentroArt {
+    width: fit-content;
+    border: 15px dashed blue;
+}
+
 .rodape {
     border: 2px solid red;
     background-color: white;
+    bottom: 0;
+    text-align: center;
+}
+
+.paiImagemTotal {
+    width: fit-content;
 }
 
 .imagemTotal {
     text-align: center;
-    border: 3px groove green;
+    width: 100%;
+    padding: 2%;
 }
 
 .imagemUnica {
     width: 70%;
+    border: 10px groove yellow;
+    border-radius: 5%;
 }
