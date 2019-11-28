@@ -4,17 +4,17 @@ const recebeTexto = document.createElement('p');
 recebeTexto.classList += 'texto-meme-baixo';
 divTextoBaixo.appendChild(recebeTexto);
 
-carregarTexto.addEventListener('keyup', loadText);
-
-function loadText() {
+function loadText () {
   recebeTexto.innerHTML = carregarTexto.value;
 }
+
+carregarTexto.addEventListener('keyup', loadText);
 
 const recebeFoto = document.getElementById('img-foto');
 const botaoFoto = document.getElementById('botao-foto');
 
-botaoFoto.addEventListener('change', loadImage);
-
-function loadImage(event) {
+function loadImage (event) {
   recebeFoto.src = URL.createObjectURL(event.target.files[0]);
 }
+
+botaoFoto.addEventListener('change', loadImage);
