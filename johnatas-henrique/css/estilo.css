@@ -26,8 +26,7 @@ body {
   -webkit-text-stroke: 1px black;
   font-size: 3em;
   color: white;
-  text-shadow: 3px 3px 0 black , -1px -1px 0 black ,
-  1px -1px 0 black , 1px 1px 0 black;
+  text-shadow: 3px 3px 0 black, -1px -1px 0 black, 1px -1px 0 black, 1px 1px 0 black;
 }
 
 .centralizar {
@@ -47,8 +46,7 @@ body {
   font-weight: 700;
   -webkit-text-stroke: 1px black;
   color: white;
-  text-shadow: 3px 3px 0 black , -1px -1px 0 black , 
-  1px -1px 0 black , 1px 1px 0 black;
+  text-shadow: 3px 3px 0 black, -1px -1px 0 black, 1px -1px 0 black, 1px 1px 0 black;
 }
 
 .caixa-texto-input {
@@ -111,5 +109,5 @@ body {
   font-size: 2em;
   -webkit-text-stroke: 1px black;
   color: white;
-  text-shadow: 3px 3px 0 black , -1px -1px 0 black , 1px -1px 0 black , -1px 1px 0 black , 1px 1px 0 black;
+  text-shadow: 3px 3px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
