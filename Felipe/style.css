@@ -1,5 +1,5 @@
 .clear {
-    clear
+    clear: both;
 }
 
 body {
@@ -8,4 +8,46 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-clip: border-box;
+}
+
+.header {
+    border: 2px solid red;
+    background-color: white;
+    text-align: left;
+    float: inline-start;
+}
+
+.caixaTitulo1 {
+    border: 2px solid blue;
+    text-align: center;
+}
+
+.side {
+    border: 2px solid red;
+    background-color: white;
+    float: right;
+    margin: 20px 10px 10px 10px;
+    width: 20%;
+}
+
+.art {
+    border: 2px solid red;
+    background-color: white;
+    float: left;
+    margin: 20px 5px 20px 20px;
+    width: 75%;
+}
+
+.rodape {
+    border: 2px solid red;
+    background-color: white;
+}
+
+.imagemTotal {
+    text-align: center;
+    border: 3px groove green;
+}
+
+.imagemUnica {
+    width: 70%;
 }

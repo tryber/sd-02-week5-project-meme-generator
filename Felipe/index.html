@@ -23,26 +23,44 @@
 
 </head>
 
-<body>
+<body class="corpo">
 
-    <header>
-        <h1 class="titulo">Gerador de Memes</h1>
+    <header class="header">
+        <div class="caixaTitulo1">
+            <h1 class="titulo1">Gerador de Memes</h1>
+        </div>
     </header>
 
     <div class="clear"></div>
 
 
-    <aside>
-        <h2 class="menuLat">Configurações</h2>
+    <aside class="side">
+        <h2 class="titulo2">Configurações</h2>
     </aside>
 
 
-    <article>
-        <h3 class="">Bloco da Imagem</h3>
+    <article class="art">
+        <h1 class="titulo3">Bloco da Imagem</h1>
+        <section>
+            <h2>Selecione a imagem</h2>
+            <form>
+                <span>Digite a frase: </span>
+                <input type="text" name="frase" placeholder="Digite aqui sua frase" maxlength="100" size="60">
+                <span>Selecione uma foto:</span>
+                <input type="file" id="botao-imagem">
+                <label for="botao-imagem"></label>
+            </form>
+            <br>
+            <br>
+            <div class="imagemTotal">
+                <img class="imagemUnica" src="./images/memesbackground.jpg" alt="Memes no Fundo">
+            </div>
+        </section>
     </article>
 
+    <div class="clear"></div>
 
-    <footer>
+    <footer class="rodape">
         <h4>Copyrights</h4>
     </footer>
 
