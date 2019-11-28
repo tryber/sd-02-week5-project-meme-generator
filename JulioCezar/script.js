@@ -18,6 +18,8 @@ window.onload = function() {
   buttonDown2.addEventListener('click', fontSizeUpDown2);
   const buttonBorder = document.getElementById('button_border');
   buttonBorder.addEventListener('click', mudaBorda);
+  const imagemDiv = document.getElementById('imagem_div_famosos');
+  imagemDiv.addEventListener('click', adicionarImagemDestacada);
 }
 
 function mudaBorda(event) {
@@ -92,6 +94,11 @@ function updateTextUp() {
   const inputText = document.getElementById('input_textUp').value;
   document.getElementById('span_meme_text_up').innerHTML = inputText;
   
+}
+
+function adicionarImagemDestacada(event) {
+  const imagem = event.target;
+  document.getElementById('imagem').src = imagem.src;
 }
 
 function adicionarImagem(event) {
