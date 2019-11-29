@@ -9,26 +9,26 @@
 
 @font-face {
   font-family: android7;
-  src: url("../Felipe/font-family/membra.ttf");
+  src: url( '../Felipe/font-family/membra.ttf' );
 }
 
 @font-face {
   font-family: nfsunder;
-  src: url("../Felipe/font-family/UndergroundNF.ttf");
+  src: url( '../Felipe/font-family/UndergroundNF.ttf' );
 }
 
 @font-face {
   font-family: cowboy;
-  src: url("../Felipe/font-family/Cowboys.ttf");
+  src: url( '../Felipe/font-family/Cowboys.ttf' );
 }
 
 @font-face {
   font-family: corleone;
-  src: url("../Felipe/font-family/Corleone.ttf");
+  src: url( '../Felipe/font-family/Corleone.ttf' );
 }
 
 body {
-  background-image: url(./images/memesbackground.jpg );
+  background-image: url( ./images/memesbackground.jpg );
   background-size: 108%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -50,7 +50,7 @@ body {
 
 .caixaFilhoTitulo1 {
   width: fit-content;
-  font-family: android7, sans-serif;
+  font-family: android7 , sans-serif;
   font-size: 100px;
   color: violet;
 }
@@ -60,13 +60,13 @@ body {
 }
 
 .titulo2 {
-  font-family: corleone, sans-serif;
+  font-family: corleone , sans-serif;
   font-size: 4em;
 }
 
 .titulo3 {
   font-size: 50px;
-  font-family: nfsunder, sans-serif;
+  font-family: nfsunder , sans-serif;
 }
 
 .caixaTitulo3 {
@@ -81,7 +81,7 @@ body {
 }
 
 .tituloForm {
-  font-family: cowboy, sans-serif;
+  font-family: cowboy , sans-serif;
   font-size: 1.5em;
 }
 
@@ -123,7 +123,7 @@ body {
 }
 
 .selecFoto {
-  font-family: corleone, sans-serif;
+  font-family: corleone , sans-serif;
   font-size: 1.5em;
   letter-spacing: 2px;
 }
@@ -139,7 +139,7 @@ body {
 }
 
 .tituloClick:hover {
-  color: rgb(116, 26, 143);
+  color: rgb( 116 , 26 , 143 );
   background-color: green;
   border: 10px groove blue;
 }
@@ -197,7 +197,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   text-align: center;
-  font-family: nfsunder, sans-serif;
+  font-family: nfsunder , sans-serif;
 }
 
 .rodape {
