@@ -10,6 +10,11 @@ textoForm.addEventListener('keyup', function() {
 
 /* Insere imagem no img */
 
+const recebeFoto = document.querySelector('.imagemUnica');
+const botaoFoto = document.querySelector('#botaoFoto');
 
-let caminhoImgForm = document.getElementById('#botaoFoto')
-let imagemFInal =
+function loadImage(event) {
+    recebeFoto.src = window.URL.createObjectURL(event.target.files[0]);
+}
+
+botaoFoto.addEventListener('change', loadImage);

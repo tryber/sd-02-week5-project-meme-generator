@@ -174,7 +174,6 @@ body {
 .imagemTotal {
     text-align: center;
     width: 100%;
-    position: relative;
 }
 
 .imagemUnica {
@@ -184,18 +183,22 @@ body {
 .posTexto {
     border: 10px groove green;
     padding: 10px;
+    width: 60%;
+    margin-left: 18%;
+    position: relative;
 }
 
 .textoNaImagem {
-    font-size: 60px;
+    font-size: 600%;
     color: white;
     position: absolute;
-    bottom: 1.5%;
+    bottom: 0%;
     left: 0%;
-    padding: 3%;
+    padding: 0 3%;
     width: 100%;
     box-sizing: border-box;
     text-align: center;
+    font-family: nfsunder;
 }
 
 .rodape {
