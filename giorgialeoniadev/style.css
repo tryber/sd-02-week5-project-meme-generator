@@ -48,6 +48,7 @@ body {
     width: 400px;
     height: 400px;
     float: left;
+    position: absolute;
 }
 
 .foto {
@@ -78,19 +79,11 @@ body {
      text-shadow: 0.1em 0.1em 0.2em black;
  }
 
- #textofinalbaixo {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-     font-size: 30px;
-     margin-left: 20px;
-     margin-top: 20px;
-     color: white;
-     position: absolute;
-     word-break: break-all;
-     padding: 10;
-     text-transform: uppercase;
-     text-shadow: 0.1em 0.1em 0.2em black;
-}
 
  .rodape {
-     background: ;
+    margin-top: 10px; 
+    background: white;
+     text-align: center;
+     font-family: sans-serif;
  }
+

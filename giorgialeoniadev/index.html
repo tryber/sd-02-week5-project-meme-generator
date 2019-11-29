@@ -20,10 +20,11 @@
         <section class="foto">
             <p class="explica">Insira uma imagem e divirta-se!</p>
             <input input type="file" accept="image/*" name="image" id="file">
-        
+
             <!--Imagens pré-carregadas-->
             <section id="options">
-                <p class="explica">Não quer usar uma imagem do seu computador? Crie seu meme com essas imagens prontas para serem
+                <p class="explica">Não quer usar uma imagem do seu computador? Crie seu meme com essas imagens prontas
+                    para serem
                     estilizadas: </p>
                 <img src="imagem1.jpg" value="foto1" class="imgcarregadas">
                 <img src="imagem2.jpg" value="foto2" class="imgcarregadas">
@@ -32,19 +33,19 @@
                 <img src="imagem5.png" value="foto5" class="imgcarregadas">
             </section>
             <!--Inserção de texto-->
-        <section>
-            <span class="inputtexto">Digite o texto que ficará na parte superior:</span>
-            <input type="text" id="textocima" maxlength="60"><br>
-            <span class="inputtexto">Digite o texto que ficará na parte inferior:</span>
-            <input type="text" id="textobaixo" maxlength="60"><br>
-        </section>
+            <section>
+                <span class="inputtexto">Digite o texto que ficará na parte superior:</span>
+                <input type="text" id="textocima" maxlength="60"><br>
+                <span class="inputtexto">Digite o texto que ficará na parte inferior:</span>
+                <input type="text" id="textobaixo" maxlength="60"><br>
+            </section>
         </section>
 
         <!--Resultado-->
-        <section class="resultado">
-                <p id="textofinalcima" class="fonteimg"></p>
-                <p id="textofinalbaixo" class="fonteimg"></p>
-            <img id="output" class="imgshow" />
+        <section class="fim">
+            <p id="textofinalcima"></p>
+            <p id="textofinalbaixo"></p>
+            <img id="output" class="resultado" />
 
         </section>
         <div class="acertar">
@@ -56,4 +57,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
