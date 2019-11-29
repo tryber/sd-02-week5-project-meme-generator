@@ -3,9 +3,12 @@
 const textoForm = document.querySelector('.caixaTexto');
 const textoCaixa = document.querySelector('.textoNaImagem');
 
-textoForm.addEventListener('keyup', function colocaTextoCaixa() {
-  textoCaixa.innerText = textoForm.value;
-});
+
+function colocaTextoCaixa() {
+    textoCaixa.innerText = textoForm.value;
+  }
+
+textoForm.addEventListener('keyup', colocaTextoCaixa);
 
 
 /* Insere imagem no img */
