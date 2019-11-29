@@ -8,22 +8,22 @@
 }
 
 @font-face {
-    font-family: android7;
+    font-family: android7, unica;
     src: url("../Felipe/font-family/membra.ttf");
 }
 
 @font-face {
-    font-family: nfsunder;
+    font-family: nfsunder, unica;
     src: url("../Felipe/font-family/UndergroundNF.ttf");
 }
 
 @font-face {
-    font-family: cowboy;
+    font-family: cowboy, unica;
     src: url("../Felipe/font-family/Cowboys.ttf");
 }
 
 @font-face {
-    font-family: corleone;
+    font-family: corleone, unica;
     src: url("../Felipe/font-family/Corleone.ttf");
 }
 
