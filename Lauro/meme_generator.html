@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Página Inicial —  Receita Federal</title>
+</head>
+<style>
+body{
+	font-family: sans-serif;
+	text-align: center;
+	margin:auto;
+}
+#tosquera{
+	text-decoration: line-through
+}
+#imagem-escolhida{
+	font-size: 10px;
+}
+#quadrado{
+	margin:auto;
+	margin-bottom: 20px;
+	width: 500px;
+	height: 500px;
+	border: 1px solid #000;
+}
+#insira-texto{
+	width: 600px;
+	text-align: center;
+}
+img{
+	z-index: -1;
+}
+#texto-meme{
+	/*-webkit-text-stroke: 1px black;*/
+	width:500px;
+	word-break:normal;
+	font-size:30px
+	color:red;
+	text-transform: uppercase;
+	font-size: 30px;
+	position:absolute;
+}
+.rodape{
+    font-size: 9px;
+    text-align: center;
+    margin: 0px;
+}
+</style>
+<body>
+<h1>LANSA A BRABA MEME GENERATOR</h1>
+
+<p>Seja bem vindo! aqui você vai criar memes de qualidade <span id="tosquera">duvidosa</span>.<p>
+
+<h2>AQUI TEM MEME, ROGERINHO!!!1onze</h2>
+
+<p>O procedimento é simplísimo: </p>
+<h3>Primeiro escolha uma imagem</h3>
+<input type="file" id="select_image" name="image" onchange="putImage()"></input><br><br>
+<form>
+<h3>Agora, digite o texto da parte superior do meme:</h3>
+<input type="text" name="texto-superior" id="insira-texto"></form>
+<br>
+<p>A prévia da sua imagem está logo abaixo:</p>
+
+<div id = "quadrado">
+	<div id='texto-meme'></div>
+	<img id="target" height=500 width=500></img>
+</div>
+<footer>
+<p class="rodape">A culpa é do <a href="mailto:laurolyra@gmail.com">Lauro</a></p>
+</body>
+<script>
+	let texto = document.getElementById("insira-texto");
+	let textoMeme = document.getElementById("texto-meme");
+	let quadroMeme = document.getElementById('quadrado');
+	let ImagemEscolhida = document.getElementById('imagem-escolhida')
+	texto.addEventListener('keyup', EscreveTela);
+	function EscreveTela() {
+		textoMeme.innerText = this.value;
+	}
+	function getImages(contentId) {
+    let content = document.getElementById('escolhe-arquivo');
+	}
+	function showImage(src, target) {
+    var fr = new FileReader();
+    fr.onload = function(){
+        target.src = fr.result;
+    }
+    fr.readAsDataURL(src.files[0]);
+}
+
+	function putImage() {
+    var src = document.getElementById("select_image");
+    var target = document.getElementById("target");
+    showImage(src, target);
+}
+</script>
+</html>
