@@ -9,26 +9,26 @@
 
 @font-face {
   font-family: android7;
-  src: url('../Felipe/font-family/membra.ttf');
+  src: url( '../Felipe/font-family/membra.ttf' );
 }
 
 @font-face {
   font-family: nfsunder;
-  src: url('../Felipe/font-family/UndergroundNF.ttf');
+  src: url( '../Felipe/font-family/UndergroundNF.ttf' );
 }
 
 @font-face {
   font-family: cowboy;
-  src: url('../Felipe/font-family/Cowboys.ttf');
+  src: url( '../Felipe/font-family/Cowboys.ttf' );
 }
 
 @font-face {
   font-family: corleone;
-  src: url('../Felipe/font-family/Corleone.ttf');
+  src: url( '../Felipe/font-family/Corleone.ttf' );
 }
 
 body {
-  background-image: url('./images/memesbackground.jpg');
+  background-image: url( './images/memesbackground.jpg' );
   background-size: 108%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -51,19 +51,19 @@ body {
 
 .caixaFilhoTitulo1 {
   width: fit-content;
-  font-family: android7, sans-serif;
+  font-family: android7 , sans-serif;
   font-size: 100px;
   color: violet;
 }
 
 .titulo2 {
-  font-family: corleone, sans-serif;
+  font-family: corleone , sans-serif;
   font-size: 4em;
 }
 
 .titulo3 {
   font-size: 50px;
-  font-family: nfsunder, sans-serif;
+  font-family: nfsunder , sans-serif;
 }
 
 .caixaTitulo3 {
@@ -78,7 +78,7 @@ body {
 }
 
 .tituloForm {
-  font-family: cowboy, sans-serif;
+  font-family: cowboy , sans-serif;
   font-size: 1.5em;
 }
 
@@ -115,12 +115,12 @@ body {
   float: left;
   margin: 20px 5px 20px 20px;
   width: 75%;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba( 255 , 255 , 255 , 0.85 );
   background-blend-mode: lighten;
 }
 
 .selecFoto {
-  font-family: corleone, sans-serif;
+  font-family: corleone , sans-serif;
   font-size: 1.5em;
   letter-spacing: 2px;
 }
@@ -140,12 +140,12 @@ body {
   color: white;
   display: inline-block;
   padding: 3px;
-  border: 2px solid rgb(182, 72, 182);
+  border: 2px solid rgb( 182 , 72 , 182 );
   margin-bottom: 3px;
 }
 
 .tituloClick:hover {
-  color: rgb(116, 26, 143);
+  color: rgb( 116 , 26 , 143 );
   background-color: green;
   border: 10px groove blue;
 }
@@ -194,7 +194,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   text-align: center;
-  font-family: nfsunder, sans-serif;
+  font-family: nfsunder , sans-serif;
 }
 
 .rodape {
@@ -202,5 +202,5 @@ body {
   bottom: 0;
   text-align: center;
   font-size: 2em;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba( 255 , 255 , 255 , 0.85 );
 }
