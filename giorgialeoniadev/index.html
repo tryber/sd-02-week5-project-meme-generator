@@ -19,7 +19,7 @@
         <!--Escolhendo imagem do computador-->
         <section class="foto">
             <p class="explica">Insira uma imagem e divirta-se!</p>
-            <input input type="file" accept="image/*" name="image" id="file" onchange="adicionandoImagem()">
+            <input input type="file" accept="image/*" name="image" id="file">
         
             <!--Imagens pré-carregadas-->
             <section id="options">
@@ -42,9 +42,10 @@
 
         <!--Resultado-->
         <section class="resultado">
+                <p id="textofinalcima" class="fonteimg"></p>
+                <p id="textofinalbaixo" class="fonteimg"></p>
             <img id="output" class="imgshow" />
-            <p id="textofinalcima" class="fonteimg"></p>
-            <p id="textofinalbaixo" class="fonteimg"></p>
+
         </section>
         <div class="acertar">
         </div>

@@ -13,7 +13,7 @@ body {
 
 
 .corpopai {
-    border: solid yellow 3px;
+    border: solid rgb(121, 102, 83) 3px;
     background: white;
     height: 100%;
     margin: auto;
@@ -21,7 +21,9 @@ body {
 }
 
 #file {
-    padding: auto;
+    padding-left: 150px;
+    font-size: 14px;
+    font-family: sans-serif;
 }
 
 .explica {
@@ -42,7 +44,7 @@ body {
 }
 
 .resultado {
-    border: solid black 3px;
+    border: rgb(225, 161, 63) dotted 3px;
     width: 400px;
     height: 400px;
     float: left;
@@ -57,3 +59,38 @@ body {
 .acertar {
     clear: both;
 }
+
+.inputtexto{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#textofinalcima, {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-size: 30px;
+     margin-left: 20px;
+     margin-top: 20px;
+     color: white;
+     position: absolute;
+     word-break: break-all;
+     padding: 10;
+     text-transform: uppercase;
+     text-shadow: 0.1em 0.1em 0.2em black;
+ }
+
+ #textofinalbaixo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-size: 30px;
+     margin-left: 20px;
+     margin-top: 20px;
+     color: white;
+     position: absolute;
+     word-break: break-all;
+     padding: 10;
+     text-transform: uppercase;
+     text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+ .rodape {
+     background: ;
+ }
