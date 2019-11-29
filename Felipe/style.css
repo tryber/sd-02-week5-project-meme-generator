@@ -28,7 +28,7 @@
 }
 
 body {
-  background-image: url( ./images/memesbackground.jpg );
+  background-image: url( './images/memesbackground.jpg' );
   background-size: 108%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -46,6 +46,7 @@ body {
 
 .titulo1 {
   width: 100%;
+  margin-left: 10px;
 }
 
 .caixaFilhoTitulo1 {
@@ -53,10 +54,6 @@ body {
   font-family: android7 , sans-serif;
   font-size: 100px;
   color: violet;
-}
-
-.titulo1 {
-  margin-left: 10px;
 }
 
 .titulo2 {
@@ -105,7 +102,7 @@ body {
   border: 2px solid red;
   background-color: white;
   float: right;
-  margin: 20px 10px 10px 10px;
+  margin: 20px 10px 10px;
   width: 20%;
   text-align: center;
 }
@@ -138,19 +135,19 @@ body {
   left: -10000px;
 }
 
+.tituloClick {
+    background-color: purple;
+    color: white;
+    display: inline-block;
+    padding: 3px;
+    border: 2px solid rgb( 182 , 72 , 182 );
+    margin-bottom: 3px;
+  }
+
 .tituloClick:hover {
   color: rgb( 116 , 26 , 143 );
   background-color: green;
   border: 10px groove blue;
-}
-
-.tituloClick {
-  background-color: purple;
-  color: white;
-  display: inline-block;
-  padding: 3px;
-  border: 2px solid rgb( 182 , 72 , 182 );
-  margin-bottom: 3px;
 }
 
 .caixaPaiDentroArt {
@@ -202,7 +199,7 @@ body {
 
 .rodape {
   border: 2px solid red;
-  bottom: 0px;
+  bottom: 0;
   text-align: center;
   font-size: 2em;
   background-color: rgba( 255 , 255 , 255 , 0.85 );
