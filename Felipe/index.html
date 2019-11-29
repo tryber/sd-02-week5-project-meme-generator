@@ -9,18 +9,6 @@
 
 
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./script.js">
-
-    <style>
-        /* Teste o CSS AQUI */
-    </style>
-
-
-
-    <script>
-        /* Teste o Javascript AQUI */
-    </script>
-
 </head>
 
 <body class="corpo">
@@ -42,27 +30,34 @@
     <article class="art">
         <div class="caixaPaiDentroArt">
             <div class="caixaDentroArt">
-                <div class="caixaTitulo3">
-                    <h1 class="titulo3">BIIIRLLL !!!</h1>
-                </div>
-                <section></section>
-                <form class="caixaForm">
-                    <span class="tituloForm">Qual o texto para o meme?<br><br></span>
-                    <input class="caixaTexto" type="text" name="frase" placeholder="Digite aqui a frase do meme" maxlength="1000" size="60">
-                    <br><br>
-                    <p class="selecFoto">Selecione uma foto:</p>
-                    <div class="caixaBotao"><input class="caixaBotaoFilho" type="file" id="botao-imagem">
-                        <label for="botao-imagem"></label>
-                        <br><br>
+                <div class="caixaDentroArtFilho">
+                    <div class="caixaTitulo3">
+                        <h1 class="titulo3">BIIIRLLL !!!</h1>
                     </div>
-                </form>
-                <br>
-                <br>
-                <div class="paiImagemTotal">
-                    <div class="imagemTotal">
-                        <img class="imagemUnica" src="./images/memesbackground.jpg" alt="Memes no Fundo">
-                        <div class="clear"></div>
-                        <p class="textoNaImagem">Texto Aqui</p>
+                    <form class="caixaForm">
+                        <span class="tituloForm">Qual o texto para o meme?<br><br></span>
+                        <div class="caixaLimit">
+                            <div class="caixaLimitFilho">
+                                <input class="caixaTexto" type="text" name="frase" placeholder="Digite aqui a frase do meme" maxlength="1000" size="60">
+                            </div>
+                        </div>
+                        <p class="selecFoto">Selecione uma foto:</p>
+                        <div class="caixaBotao"><input class="caixaBotaoFilho" type="file" id="botao-foto">
+                            <label for="botao-foto"><h2>Clica aqui!</h2></label>
+                            <br><br>
+                        </div>
+                    </form>
+                    <div class="paiImagemTotal">
+                        <div class="imagemTotal">
+                            <div class="posTexto">
+                                <img class="imagemUnica" src="./images/memesbackground.jpg" alt="Memes no Fundo">
+                                <div class="caixaDoTexto">
+                                    <p class="textoNaImagem">Texashudi hasuidasHAASHUIS AHUISAHUISAH UISAHIUSAHISAHI SAUIHASIUto Aqui</p>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+
+                        </div>
                     </div>
                 </div>
                 </section>
@@ -78,6 +73,7 @@
         <h4>Gerador de Memes Criado Por: <span class="meuNome">Felipe Andrade Lima</span></h4>
     </footer>
 
+    <script src="./script.js"></script>
 
 </body>
 

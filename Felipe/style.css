@@ -65,15 +65,9 @@ body {
 }
 
 .caixaTitulo3 {
-    border: 2px solid yellow;
     text-align: center;
     padding: 0;
-    border: 0;
     margin: 0;
-}
-
-.caixaSection {
-    border: 2px solid yellow;
 }
 
 .caixaForm {
@@ -88,9 +82,19 @@ body {
 }
 
 .caixaTexto {
-    width: 900px;
-    height: 70px;
+    width: 80%;
+    height: 20%;
     font-size: 2em;
+    display: inline-block;
+}
+
+.caixaLimit {
+    width: fit-content;
+    display: inline-block;
+}
+
+.caixaLimitFilho {
+    border: 20px double green;
 }
 
 .side {
@@ -133,33 +137,46 @@ body {
 }
 
 .caixaDentroArt {
-    border: 15px dashed blue;
+    border-top: 15px dashed blue;
+    border-left: 15px dashed blue;
+    border-right: 15px dashed blue;
 }
 
-.paiImagemTotal {}
+.caixaDentroArtFilho {
+    border-top: 20px groove red;
+    border-left: 20px groove red;
+    border-right: 20px groove red;
+    margin-bottom: auto;
+}
 
 .imagemTotal {
     text-align: center;
     width: 100%;
-    padding: 2%;
+    position: relative;
 }
 
 .imagemUnica {
-    width: 70%;
-    border: 10px groove yellow;
+    width: 100%;
+}
+
+.posTexto {
+    border: 10px groove green;
+    padding: 10px;
 }
 
 .textoNaImagem {
+    border: 5px solid yellow;
     font-size: 60px;
     color: white;
     position: absolute;
-    bottom: 300px;
-    left: 300px;
+    bottom: 1.5%;
+    left: 0%;
+    padding: 3%;
 }
 
 .rodape {
     border: 2px solid red;
     background-color: white;
-    bottom: 0;
+    bottom: 0px;
     text-align: center;
 }
