@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .clear {
     clear: both;
 }
@@ -130,6 +135,23 @@ body {
 
 .caixaBotaoFilho {
     border: 2px solid blue;
+    position: absolute;
+    left: -10000px;
+}
+
+.tituloClick:hover {
+    color: rgb(116, 26, 143);
+    background-color: green;
+    border: 10px groove blue;
+}
+
+.tituloClick {
+    background-color: purple;
+    color: white;
+    display: inline-block;
+    padding: 3px;
+    border: 2px solid rgb(182, 72, 182);
+    margin-bottom: 3px;
 }
 
 .caixaPaiDentroArt {
@@ -165,13 +187,15 @@ body {
 }
 
 .textoNaImagem {
-    border: 5px solid yellow;
     font-size: 60px;
     color: white;
     position: absolute;
     bottom: 1.5%;
     left: 0%;
     padding: 3%;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .rodape {
