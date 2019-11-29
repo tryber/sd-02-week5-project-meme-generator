@@ -1,5 +1,5 @@
 body {
-    background-image: url("background.jpg");
+    background: url("./background.jpg");
 }
 
 .titulo {
@@ -8,23 +8,52 @@ body {
     font-family: "Funny\ &\ Cute";
     src: url("Funny\ &\ Cute.ttf") format("truetype");
     color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+
+.corpopai {
+    border: solid yellow 3px;
+    background: white;
+    height: 100%;
+    margin: auto;
+    padding: 30px;
 }
 
 #file {
-    padding-left: 350px;
+    padding: auto;
 }
 
-#explica {
+.explica {
     font-family: sans-serif;
     text-align: center;
     color:black;
     font-size: 20px;
 }
 
+
+.imgcarregadas {
+    width: 90px;
+    height: 90px;
+}
+
+#options{
+    align-items: center;
+}
+
+.resultado {
+    border: solid black 3px;
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+
 .foto {
-    border: solid white 3px;
-    background: white;
-    padding: 40px;
-    width: 90%;
-    margin: auto;
+    float: right;
+    width: 600px;
+    height: 400px;
+}
+
+.acertar {
+    clear: both;
 }

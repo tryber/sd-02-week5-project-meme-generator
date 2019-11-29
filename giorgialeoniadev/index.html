@@ -1,22 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Meme Generator</title>
 </head>
+
 <body>
-    <header class="titulo"><h1>MEME GENERATOR</h1>
+    <header class="titulo">
+        <h1>MEME GENERATOR</h1>
     </header>
 
-    <section class="foto">
-        <p id="explica">Insira uma imagem e divira-se!</p>
-        <input input type="file" accept="image/*" name="image" id="file" onchange="adicionandoImagem(event)"> 
-        
-    </section>
 
+    <article class="corpopai">
+        <!--Escolhendo imagem do computador-->
+        <section class="foto">
+            <p class="explica">Insira uma imagem e divirta-se!</p>
+            <input input type="file" accept="image/*" name="image" id="file" onchange="adicionandoImagem()">
+        
+            <!--Imagens pré-carregadas-->
+            <section id="options">
+                <p class="explica">Não quer usar uma imagem do seu computador? Crie seu meme com essas imagens prontas para serem
+                    estilizadas: </p>
+                <img src="imagem1.jpg" value="foto1" class="imgcarregadas">
+                <img src="imagem2.jpg" value="foto2" class="imgcarregadas">
+                <img src="imagem3.jpg" value="foto3" class="imgcarregadas">
+                <img src="imagem4.jpg" value="foto4" class="imgcarregadas">
+                <img src="imagem5.png" value="foto5" class="imgcarregadas">
+            </section>
+            <!--Inserção de texto-->
+        <section>
+            <span class="inputtexto">Digite o texto que ficará na parte superior:</span>
+            <input type="text" id="textocima" maxlength="60"><br>
+            <span class="inputtexto">Digite o texto que ficará na parte inferior:</span>
+            <input type="text" id="textobaixo" maxlength="60"><br>
+        </section>
+        </section>
+
+        <!--Resultado-->
+        <section class="resultado">
+            <img id="output" class="imgshow" />
+            <p id="textofinalcima" class="fonteimg"></p>
+            <p id="textofinalbaixo" class="fonteimg"></p>
+        </section>
+        <div class="acertar">
+        </div>
+
+    </article>
+
+    <footer class="rodape">Página desenvolvida por Giorgia Leonia em Novembro de 2019.</footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
