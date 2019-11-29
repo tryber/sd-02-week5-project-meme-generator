@@ -8,22 +8,22 @@
 }
 
 @font-face {
-    font-family: android7, unica;
+    font-family: android7;
     src: url("../Felipe/font-family/membra.ttf");
 }
 
 @font-face {
-    font-family: nfsunder, unica;
+    font-family: nfsunder;
     src: url("../Felipe/font-family/UndergroundNF.ttf");
 }
 
 @font-face {
-    font-family: cowboy, unica;
+    font-family: cowboy;
     src: url("../Felipe/font-family/Cowboys.ttf");
 }
 
 @font-face {
-    font-family: corleone, unica;
+    font-family: corleone;
     src: url("../Felipe/font-family/Corleone.ttf");
 }
 
@@ -50,7 +50,7 @@ body {
 
 .caixaFilhoTitulo1 {
     width: fit-content;
-    font-family: android7;
+    font-family: android7, personalizada;
     font-size: 100px;
     color: violet;
 }
@@ -60,13 +60,13 @@ body {
 }
 
 .titulo2 {
-    font-family: corleone;
+    font-family: corleone, personalizada;
     font-size: 4em;
 }
 
 .titulo3 {
     font-size: 50px;
-    font-family: nfsunder;
+    font-family: nfsunder, personalizada;
 }
 
 .caixaTitulo3 {
@@ -82,7 +82,7 @@ body {
 }
 
 .tituloForm {
-    font-family: cowboy;
+    font-family: cowboy, personalizada;
     font-size: 1.5em;
 }
 
@@ -124,7 +124,7 @@ body {
 }
 
 .selecFoto {
-    font-family: corleone;
+    font-family: corleone, personalizada;
     font-size: 1.5em;
     letter-spacing: 2px;
 }
@@ -189,7 +189,7 @@ body {
 }
 
 .textoNaImagem {
-    font-size: 600%;
+    font-size: 500%;
     color: white;
     position: absolute;
     bottom: 0%;
@@ -198,12 +198,13 @@ body {
     width: 100%;
     box-sizing: border-box;
     text-align: center;
-    font-family: nfsunder;
+    font-family: nfsunder, personalizada;
 }
 
 .rodape {
     border: 2px solid red;
-    background-color: white;
     bottom: 0px;
     text-align: center;
+    font-size: 2em;
+    background-color: rgba( 255, 255, 255, 0.85);
 }
