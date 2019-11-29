@@ -66,7 +66,7 @@ body {
     font-family: sans-serif;
 }
 
-#textofinalcima, {
+#textofinalcima {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
      font-size: 30px;
      margin-left: 20px;
@@ -74,6 +74,21 @@ body {
      color: white;
      position: absolute;
      word-break: break-all;
+     z-index: 999;
+     padding: 10;
+     text-transform: uppercase;
+     text-shadow: 0.1em 0.1em 0.2em black;
+ }
+
+ #textofinalbaixo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-size: 30px;
+     margin-left: 20px;
+     margin-top: 340px;
+     color: white;
+     position: absolute;
+     word-break: break-all;
+     z-index: 1000;
      padding: 10;
      text-transform: uppercase;
      text-shadow: 0.1em 0.1em 0.2em black;
