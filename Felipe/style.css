@@ -118,7 +118,7 @@ body {
     float: left;
     margin: 20px 5px 20px 20px;
     width: 75%;
-    background-color: rgba(255,255,255,0.85);
+    background-color: rgba(255 ,255 ,255 ,0.85);
     background-blend-mode: lighten;
 }
 
@@ -139,7 +139,7 @@ body {
 }
 
 .tituloClick:hover {
-    color: rgb(116, 26, 143);
+    color: rgb(116 ,26 ,143);
     background-color: green;
     border: 10px groove blue;
 }
@@ -149,7 +149,7 @@ body {
     color: white;
     display: inline-block;
     padding: 3px;
-    border: 2px solid rgb(182,72,182);
+    border: 2px solid rgb(182 ,72 ,182);
     margin-bottom: 3px;
 }
 
@@ -205,5 +205,5 @@ body {
     bottom: 0px;
     text-align: center;
     font-size: 2em;
-    background-color: rgba( 255, 255, 255, 0.85);
+    background-color: rgba(255 ,255 ,255 ,0.85);
 }
