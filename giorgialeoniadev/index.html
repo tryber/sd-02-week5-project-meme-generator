@@ -16,10 +16,18 @@
 
 
     <article class="corpopai">
+        <!--Resultado-->
+        <section class="fim">
+            <p id="textofinalcima"></p>
+            <p id="textofinalbaixo"></p>
+            <img id="output" class="resultado" />
+        </section>
+
         <!--Escolhendo imagem do computador-->
         <section class="foto">
-            <p class="explica">Insira uma imagem e divirta-se!</p>
+            <p class="explica">Insira uma imagem e divirta-se!<br></p>
             <input input type="file" accept="image/*" name="image" id="file">
+            <p id="dimensao">Sua imagem será automaticamente redimensionada para 400x400px para se encaixar ao formato do gerador de memes.</p>
 
             <!--Imagens pré-carregadas-->
             <section id="options">
@@ -41,19 +49,12 @@
             </section>
         </section>
 
-        <!--Resultado-->
-        <section class="fim">
-            <p id="textofinalcima"></p>
-            <p id="textofinalbaixo"></p>
-            <img id="output" class="resultado" />
-
-        </section>
         <div class="acertar">
         </div>
 
     </article>
 
-    <footer class="rodape">Página desenvolvida por Giorgia Leonia em Novembro de 2019.</footer>
+    <footer class="rodape">Página desenvolvida por <a target="_blank" href="https://giorgialeoniadev.github.io/">Giorgia Leonia</a> em Novembro de 2019.</footer>
 
     <script src="script.js"></script>
 </body>
