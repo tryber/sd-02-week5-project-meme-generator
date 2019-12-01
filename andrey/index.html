@@ -1,472 +1,90 @@
   <!DOCTYPE html>
-  <html lang="en">
+  <html lang='en'>
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>gerador de memes</title>
-    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Alata&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
-    <div class="board">
+    <div class='board'>
         <h1>Gerador de memes</h1>
         <h2>Introduza o texto</h2>
-      <div class="up">
-        <textarea rows="1" placeholder="texto cima" maxlength="30"></textarea>
+      <div class='up'>
+        <textarea rows='1' placeholder='texto cima' maxlength='30'></textarea>
       </div>
-      <div class="down">
-        <textarea rows="1" placeholder="texto baixo" maxlengthx="30"></textarea>
+      <div class='down'>
+        <textarea rows='1' placeholder='texto baixo' maxlengthx='30'></textarea>
       </div>
       <h2>Opções de texto</h2>
-      <div class="optionsText">
-        <i class="material-icons">exposure_neg_1</i>
-        <i class="material-icons">exposure_plus_1</i>
-        <i class="material-icons">format_bold</i>
-        <i class="material-icons">format_align_center</i>
-        <i class="material-icons">format_align_left</i>
-        <i class="material-icons">format_align_right</i>
+      <div class='optionsText'>
+        <i class='material-icons'>exposure_neg_1</i>
+        <i class='material-icons'>exposure_plus_1</i>
+        <i class='material-icons'>format_bold</i>
+        <i class='material-icons'>format_align_center</i>
+        <i class='material-icons'>format_align_left</i>
+        <i class='material-icons'>format_align_right</i>
       </div>
-      <button class="reset" onclick='reset()'><div><i class="material-icons">refresh</i><span>Resetar</span></div></button>
+      <button class='reset' onclick='reset()'><div><i class='material-icons'>refresh</i><span>Resetar</span></div></button>
       <h2>Insira imagem</h2>
-      <div class="fileArea">
-        <label class="dropArea" for='file'>
+      <div class='fileArea'>
+        <label class='dropArea' for='file'>
           <div>
-            <i class="material-icons">image</i>
+            <i class='material-icons'>image</i>
             <span>arraste um arquivo ou clique para carregar</span>
           </div>
         </label>
-        <input type="file" id='file' hidden onchange='previewFile()'>
+        <input type='file' id='file' hidden onchange='previewFile()'>
       </div>
       <h2>Moldura</h2>
-      <div class="moldura">
-          <i class="material-icons" style='color:#072742'>block</i>
-          <i class="material-icons" style='color:white'>lens</i>
-          <i class="material-icons" style='color:black'>lens</i>
+      <div class='moldura'>
+          <i class='material-icons' style='color:#072742'>block</i>
+          <i class='material-icons' style='color:white'>lens</i>
+          <i class='material-icons' style='color:black'>lens</i>
       </div>
     </div>
-    <div class="board2">
-      <figure class="meme">
-        <img src="img/meme1.jpg" class='borderLess'>
-        <p class="textUp" style="font-size:40px; font-weight:normal">texto...</p>
-        <p class="textDown" style="font-size:40px; font-weight:normal">texto...</p>
+    <div class='board2'>
+      <figure class='meme'>
+        <img src='img/meme1.jpg' class='borderLess'>
+        <p class='textUp' style='font-size:40px; font-weight:normal'>texto...</p>
+        <p class='textDown' style='font-size:40px; font-weight:normal'>texto...</p>
       </figure>
-      <div class="opcoes">
+      <div class='opcoes'>
         <figure>
-          <img src="img/meme1.jpg" alt="" />
+          <img src='img/meme1.jpg' alt='' />
         </figure>
         <figure>
-          <img src="img/meme2.jpg" alt="" />
+          <img src='img/meme2.jpg' alt='' />
         </figure>
         <figure>
-          <img src="img/meme3.jpg" alt="" />
+          <img src='img/meme3.jpg' alt='' />
         </figure>
         <figure>
-          <img src="img/meme4.jpeg" alt="">
+          <img src='img/meme4.jpeg' alt=''>
         </figure>
         <figure>
-          <img src="img/meme5.jpeg" alt="">
+          <img src='img/meme5.jpeg' alt=''>
         </figure>
         <figure>
-          <img src="img/meme6.jpg" alt="">
+          <img src='img/meme6.jpg' alt=''>
         </figure>
         <figure>
-          <img src="img/meme7.png" alt="">
+          <img src='img/meme7.png' alt=''>
         </figure>
         <figure>
-            <img src="img/meme8.jpg" alt="">
+            <img src='img/meme8.jpg' alt=''>
         </figure>
         <figure>
-            <img src="img/meme9.jpg" alt="">
+            <img src='img/meme9.jpg' alt=''>
         </figure>
       </div>
       </div>
-      <style>
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-
-        html , body {
-          width: 100%;
-          height: 100%;
-        }
-
-        body {
-          display: flex;
-          justify-content: flex-start;
-        }
-        
-      .board {
-        width: 25%;
-        height: 100%;
-        background-color: white;
-        overflow: scroll;
-      }
-
-      .board2 {
-        display: flex;
-        justify-content: center;
-        width: 75%;
-        height: 100%;
-        background-color: #1a232b;
-      }
-
-      .optionsText {
-        display: flex;
-        justify-content: center;
-      }
-
-      .optionsText .material-icons {
-        margin: auto 13px;
-        color:#a8b1b9;
-      }
-
-      .optionsText .material-icons:hover {
-        color: black;
-      }
-
-      .fileArea {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-      }
-
-      .dropArea {
-        margin: 20px;
-        width: 270px;
-        height: 150px;
-        border-radius: 30px;
-        border-style: dashed;
-        border-width: 2px;
-        border-color:#ced4da;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .dropArea div {
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        flex-direction: column;
-      }
-
-      .dropArea div i {
-        color:#717579;
-      }
-      .dropArea div span {
-        text-align: center;
-        margin: 5px 30px;
-        color:#a1a7ad;
-      }
-
-      .highlight {
-        background-color: #f0f3fa;
-      }
-
-      h1 , h2 {
-        width: 100%;
-        text-align: center;
-        font-family: 'Alata', sans-serif;
-        color:#072742;
-      }
-
-      h1 {
-        font-size: 30px;
-        margin-top:10px;
-        top: 30px;
-        left: 630px;
-      }
-
-      h2 {
-        margin: 20px 0;
-        padding: 8px;
-        background-color: #eef2f9;
-        
-      }
-
-      .up textarea, .down textarea {
-        margin:20px;
-        margin-top:0;
-        margin-bottom: 0;
-        font-size: 20px;
-        padding: 10px;
-        border-style: solid;
-        border-width: 1px;
-        border-color:#ced4da;
-        overflow-y:scroll;
-        resize:none;
-      }
-
-      .down textarea {
-        margin-top: 10px;
-      }
-
-      .meme {
-        height: 380px;
-        position: absolute;
-        top: 70px;
-        left:50%;
-        box-sizing: border-box;
-      }
-
-      .moldura {
-        width: 100%;
-        height: 60px;
-        margin-bottom: 20px;
-        background-color: #ced4da;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
-
-      .moldura .material-icons {
-        font-size: 40px;
-        cursor: pointer;
-      }
-
-
-      .meme img {
-        width: auto;
-        height: 380px;
-        background-size: cover;
-      }
-
-      .borderWhite {
-        border-width: 6px;
-        border-style: solid;
-        border-color: white;
-      }
-
-      .borderBlack {
-        border-width: 6px;
-        border-style: solid;
-        border-color: black;
-      }
-
-      .borderLess {
-        border-style: none;
-      }
-
-      .textUp,
-      .textDown {
-        position: absolute;
-        text-align: center;
-        color: white;
-        font-family: 'Calistoga', cursive;
-        padding: 0 30px;
-      }
-
-      .textUp {
-        width: 100%;
-        height: auto;
-        top: 270px;
-      }
-
-      .textDown {
-        width: 100%;
-        height: auto;
-        top: 70px;
-      }
-
-      .opcoes {
-        position: absolute;
-        bottom: 0;
-        left: 25%;
-        height: 170px;
-        width: 75%;
-        background-color: #1f2b38;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        display: flex;
-        justify-content: flex-start;
-        border-width: 2px 0 0 0;
-        border-style: solid;
-        border-color: #dcd5cf;
-      }
-
-      .opcoes figure {
-        margin: auto 20px;
-      }
-
-      .opcoes figure img {
-        width: auto;
-        height: 100px;
-        object-fit: contain;
-        border-width: 2px;
-        border-style: solid;
-        border-color: black;
-      }
-
-      button.reset {
-        margin: 20px 30px;
-        margin-bottom: 0;
-        padding: 5px;
-        border-width: 2px;
-        border-style: solid;
-        border-color: #072742;
-        background-color: white;
-        color: #072742;
-      }
-
-      button.reset div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      button.reset span {
-        font-size: 20px;
-      }
-
-
-    </style>
-
-    <script>
-      const inputUp = document.querySelector('.up textarea');
-      const textUp = document.querySelector('p.textUp');
-
-      const inputDown = document.querySelector('.down textarea');
-      const textDown = document.querySelector('p.textDown');
-
-      const image = document.querySelector(".meme img");
-      const opcoes = document.querySelector('.opcoes');
-
-      const dropArea = document.querySelector(".dropArea");
-
-      const btnReset = document.querySelector("button.reset");
-      const btnResetSpan = document.querySelector("button.reset span");
-      const btnResetIcon = document.querySelector("button.reset .material-icons");
-      const icones = document.querySelectorAll('.optionsText i');
-      const selecionado = [];
-
-      const moldura = document.querySelectorAll('.moldura .material-icons');
-
-      moldura.forEach(elem => {
-        elem.addEventListener('click', (e) => {
-          if(e.target.style.color == 'black') { image.className = ''; image.classList.add('borderBlack'); }
-          if(e.target.style.color == 'white') { image.className = ''; image.classList.add('borderWhite'); }
-          if(e.target.style.color == 'rgb(7, 39, 66)') { image.className = ''; image.classList.add('borderLess'); }
-        })
-      })
-
-      inputUp.addEventListener("input", (e) => {
-        textUp.innerText = inputUp.value;
-      });
-
-      inputDown.addEventListener("input", (e) => {
-        textDown.innerText = inputDown.value;
-      });
-
-      ;[textUp, textDown].forEach((elem) => {
-        ;['mouseover','mouseleave','click'].forEach((eventName) => {
-            elem.addEventListener(eventName, (e) => {
-              if(e.type == 'mouseover') {e.target.style.backgroundColor = "black";} 
-              if(e.type == 'mouseleave') {e.target.style.backgroundColor = "transparent";} 
-              if(e.type == 'click') { selecionado.pop(); selecionado.push(e.target); }
-          });
-        });
-      });
-
-      icones.forEach((elem) => {
-        elem.addEventListener('click', (e) => {
-          if(selecionado[0] !== undefined){
-            let size = selecionado[0].style.fontSize;
-          switch(elem.innerText) {
-            case 'exposure_neg_1':
-              selecionado[0].style.fontSize = `${parseInt(size.slice(0, size.length-2)) - 1}px`;
-              break;
-            case 'exposure_plus_1':
-              selecionado[0].style.fontSize = `${parseInt(size.slice(0, size.length-2)) + 1}px`;
-              break;
-            case 'format_bold':
-              console.log(selecionado[0].style.fontWeight == 'normal')
-              selecionado[0].style.fontWeight == 'normal' ? selecionado[0].style.fontWeight = 'bold' : selecionado[0].style.fontWeight = 'normal';
-              break;  
-            case 'format_align_center':
-              selecionado[0].style.textAlign = 'center';
-              break; 
-            case 'format_align_left':
-              selecionado[0].style.textAlign = 'left';
-              break; 
-            case 'format_align_right':
-              selecionado[0].style.textAlign = 'right';
-              break;    
-            default:
-              console.log();
-            }
-          }
-      });
-      })
-
-      opcoes.querySelectorAll("figure").forEach((item) => {
-        item.addEventListener('click', (e) => {
-          image.setAttribute("src", `${e.target.getAttribute("src")}`);
-        });
-      });
-
-      btnReset.addEventListener("mouseover", (e) => {
-        btnReset.style.backgroundColor = '#072742';
-        btnResetSpan.style.color = 'white';
-        btnResetIcon.style.color = 'white';
-      });
-
-      btnReset.addEventListener("mouseleave", (e) => {
-        btnReset.style.backgroundColor = 'white';
-        btnResetSpan.style.color = '#072742';
-        btnResetIcon.style.color = '#072742';
-      });
-
-      // dropArea.addEventListener('drop', function(e) {
-      //   e.preventDefault();
-      //   e.stopPropagation();
-      // });
-
-      ;['mouseover','dragenter', 'dragover'].forEach(eventName => {
-        dropArea.addEventListener(eventName, highlight, false)
-      })
-
-      ;['mouseleave','dragleave', 'drop'].forEach(eventName => {
-        dropArea.addEventListener(eventName, unhighlight, false)
-      })
-
-      function highlight(e) {
-        dropArea.classList.add('highlight');
-      }
-
-      function unhighlight(e) {
-        dropArea.classList.remove('highlight');
-      }
-
-      function reset() {
-        textUp.style.fontSize = '40px';
-        textUp.style.fontWeight = 'normal';
-        textUp.style.textAlign = 'center';
-        textDown.style.fontSize = '40px';
-        textDown.style.fontWeight = 'normal';
-        textDown.style.textAlign = 'center';
-      }
-
-      function previewFile() {
-        var preview = document.querySelector('.meme img');
-        var file = document.querySelector('input[type=file]').files[0];
-        var reader = new FileReader();
-
-        reader.onloadend = function () {
-          preview.src = reader.result;
-        }
-
-        if (file) {
-          reader.readAsDataURL(file);
-        } else {
-          preview.src = "";
-        }
-      }
-
-    </script>
+      <script src="script.js"></script>
   </body>
 
   </html>

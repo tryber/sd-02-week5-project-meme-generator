@@ -4,20 +4,20 @@ const inputUp = document.querySelector('.up textarea');
       const inputDown = document.querySelector('.down textarea');
       const textDown = document.querySelector('p.textDown');
 
-      const image = document.querySelector(".meme img");
+      const image = document.querySelector('.meme img');
       const opcoes = document.querySelector('.opcoes');
 
-      const dropArea = document.querySelector(".dropArea");
+      const dropArea = document.querySelector('.dropArea');
 
-      const btnReset = document.querySelector("button.reset");
-      const btnResetSpan = document.querySelector("button.reset span");
-      const btnResetIcon = document.querySelector("button.reset .material-icons");
+      const btnReset = document.querySelector('button.reset');
+      const btnResetSpan = document.querySelector('button.reset span');
+      const btnResetIcon = document.querySelector('button.reset .material-icons');
       const icones = document.querySelectorAll('.optionsText i');
       const selecionado = [];
 
       const moldura = document.querySelectorAll('.moldura .material-icons');
 
-      moldura.forEach(elem => {
+      moldura.forEach((elem) => {
         elem.addEventListener('click', (e) => {
           if(e.target.style.color == 'black') { image.className = ''; image.classList.add('borderBlack'); }
           if(e.target.style.color == 'white') { image.className = ''; image.classList.add('borderWhite'); }
@@ -25,19 +25,19 @@ const inputUp = document.querySelector('.up textarea');
         })
       })
 
-      inputUp.addEventListener("input", (e) => {
+      inputUp.addEventListener('input', (e) => {
         textUp.innerText = inputUp.value;
       });
 
-      inputDown.addEventListener("input", (e) => {
+      inputDown.addEventListener('input', (e) => {
         textDown.innerText = inputDown.value;
       });
 
       ;[textUp, textDown].forEach((elem) => {
         ;['mouseover','mouseleave','click'].forEach((eventName) => {
             elem.addEventListener(eventName, (e) => {
-              if(e.type == 'mouseover') {e.target.style.backgroundColor = "black";} 
-              if(e.type == 'mouseleave') {e.target.style.backgroundColor = "transparent";} 
+              if(e.type == 'mouseover') {e.target.style.backgroundColor = 'black';} 
+              if(e.type == 'mouseleave') {e.target.style.backgroundColor = 'transparent';} 
               if(e.type == 'click') { selecionado.pop(); selecionado.push(e.target); }
           });
         });
@@ -74,42 +74,37 @@ const inputUp = document.querySelector('.up textarea');
       });
       })
 
-      opcoes.querySelectorAll("figure").forEach((item) => {
+      opcoes.querySelectorAll('figure').forEach((item) => {
         item.addEventListener('click', (e) => {
-          image.setAttribute("src", `${e.target.getAttribute("src")}`);
+          image.setAttribute('src', `${e.target.getAttribute('src')}`);
         });
       });
 
-      btnReset.addEventListener("mouseover", (e) => {
+      btnReset.addEventListener('mouseover', (e) => {
         btnReset.style.backgroundColor = '#072742';
         btnResetSpan.style.color = 'white';
         btnResetIcon.style.color = 'white';
       });
 
-      btnReset.addEventListener("mouseleave", (e) => {
+      btnReset.addEventListener('mouseleave', (e) => {
         btnReset.style.backgroundColor = 'white';
         btnResetSpan.style.color = '#072742';
         btnResetIcon.style.color = '#072742';
       });
 
-      // dropArea.addEventListener('drop', function(e) {
-      //   e.preventDefault();
-      //   e.stopPropagation();
-      // });
-
-      ;['mouseover','dragenter', 'dragover'].forEach(eventName => {
+      ;['mouseover','dragenter', 'dragover'].forEach((eventName) => {
         dropArea.addEventListener(eventName, highlight, false)
       })
 
-      ;['mouseleave','dragleave', 'drop'].forEach(eventName => {
+      ;['mouseleave','dragleave', 'drop'].forEach((eventName) => {
         dropArea.addEventListener(eventName, unhighlight, false)
       })
 
-      function highlight(e) {
+      function highlight() {
         dropArea.classList.add('highlight');
       }
 
-      function unhighlight(e) {
+      function unhighlight() {
         dropArea.classList.remove('highlight');
       }
 
@@ -123,9 +118,9 @@ const inputUp = document.querySelector('.up textarea');
       }
 
       function previewFile() {
-        var preview = document.querySelector('.meme img');
-        var file = document.querySelector('input[type=file]').files[0];
-        var reader = new FileReader();
+        const preview = document.querySelector('.meme img');
+        const file = document.querySelector('input[type=file]').files[0];
+        const reader = new FileReader();
 
         reader.onloadend = function () {
           preview.src = reader.result;
@@ -134,6 +129,6 @@ const inputUp = document.querySelector('.up textarea');
         if (file) {
           reader.readAsDataURL(file);
         } else {
-          preview.src = "";
+          preview.src = '';
         }
       }
