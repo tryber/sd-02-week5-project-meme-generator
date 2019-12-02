@@ -16,9 +16,8 @@
 }
 .meme-txt {
     position: absolute;
-    margin: auto;
+    margin: 0 auto;
     width: 450px; 
-    padding: 15px;
     font-family: impact;
     font-size: 40px;
     text-transform: uppercase;
