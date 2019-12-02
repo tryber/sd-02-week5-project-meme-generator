@@ -21,14 +21,14 @@ function criarTextoBaixo () {
 };
 function tamanhoLetra() {
   switch (this.id) {
-  case 'upsize':
-    selecionarTexto[0].style.fontSize = (parseInt(selecionarTexto[0].style.fontSize) + 5 + 'px');
-    selecionarTexto[1].style.fontSize = (parseInt(selecionarTexto[1].style.fontSize) + 5 + 'px');
-    break
-  case 'downsize':
-    selecionarTexto[0].style.fontSize = (parseInt(selecionarTexto[0].style.fontSize) - 5 + 'px');
-    selecionarTexto[1].style.fontSize = (parseInt(selecionarTexto[1].style.fontSize) - 5 + 'px');
-    break
+    case 'upsize':
+      selecionarTexto[0].style.fontSize = (parseInt(selecionarTexto[0].style.fontSize) + 5 + 'px');
+      selecionarTexto[1].style.fontSize = (parseInt(selecionarTexto[1].style.fontSize) + 5 + 'px');
+    break;
+    case 'downsize':
+      selecionarTexto[0].style.fontSize = (parseInt(selecionarTexto[0].style.fontSize) - 5 + 'px');
+      selecionarTexto[1].style.fontSize = (parseInt(selecionarTexto[1].style.fontSize) - 5 + 'px');
+    break;
   }
 };
 selecionarImagem.addEventListener('change', criarImagem); 
