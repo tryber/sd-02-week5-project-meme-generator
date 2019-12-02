@@ -1,0 +1,63 @@
+body {
+    background-color: lightblue;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(143, 195, 212);
+}
+
+.conteudo {
+    display: flex;
+}
+
+.escrito {
+    position: absolute;
+    max-width: 500px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    word-break: break-all;
+}
+
+#escritoCima {
+    top: 0;
+}
+
+#escritoBaixo {
+    bottom: 0;
+}
+
+.ladoEsquerdo {
+    padding-right: 350px;
+}
+
+.imgPequenas {
+    margin: 3px;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    left: 15px;
+    top: 15px;
+}
+
+#imagensProntas {
+    border: solid black;
+    height: 120px;
+    width: 300px;
+    background-color: white;
+}
+
+#boxConteudo {
+    background-color: white;
+    width: 550px;
+    height: 400px;
+    margin-top: 10px;
+    border: yellow solid;
+    position: relative;
+}
+
+#imgMeme {
+    width: 550px;
+    height: 400px;
+}
