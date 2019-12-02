@@ -17,43 +17,43 @@ const selecionado = [];
 
 const moldura = document.querySelectorAll('.moldura .material-icons');
 
-function condicionMoldura(condicao , border) {
-  if(condicao) { image.className = ''; image.classList.add(border); }  
+function condicionMoldura(condicao, border) {
+  if (condicao) {image.className = ''; image.classList.add(border);}  
 }
 
 moldura.forEach((elem) => {
   elem.addEventListener('click', (e) => {
-    condicionMoldura(e.target.style.color == 'black', 'borderBlack');
-    condicionMoldura(e.target.style.color == 'white', 'borderWhite');
-    condicionMoldura(e.target.style.color == 'rgb(7, 39, 66)', 'borderLess');
+    condicionMoldura(e.target.style.color === 'black', 'borderBlack');
+    condicionMoldura(e.target.style.color === 'white', 'borderWhite');
+    condicionMoldura(e.target.style.color === 'rgb(7, 39, 66)', 'borderLess');
   });
 });
 
-inputUp.addEventListener('input', (e) => {
+inputUp.addEventListener('input', () => {
   textUp.innerText = inputUp.value;
 });
 
-inputDown.addEventListener('input', (e) => {
+inputDown.addEventListener('input', () => {
   textDown.innerText = inputDown.value;
 });
 
-function condicaoTextUpDown(condicao, color) {
-  if(condicao) {e.target.style.backgroundColor = color;}
+function condicaoTextUpDown(condicao, e, color) {
+  if (condicao) {e.target.style.backgroundColor = color; }
 }
 
 ;[textUp, textDown].forEach((elem) => {
   ;['mouseover','mouseleave','click'].forEach((eventName) => {
       elem.addEventListener(eventName, (e) => {
-        condicaoTextUpDown(e.type == 'mouseover', 'black');
-        condicaoTextUpDown(e.type == 'mouseleave', 'transparent');
-        if(e.type == 'click') { selecionado.pop(); selecionado.push(e.target); }
+        condicaoTextUpDown(e.type === 'mouseover', e, 'black');
+        condicaoTextUpDown(e.type === 'mouseleave', e, 'transparent');
+        if (e.type === 'click') { selecionado.pop(); selecionado.push(e.target); }
     });
   });
 });
 
 icones.forEach((elem) => {
   elem.addEventListener('click', (e) => {
-    if(selecionado[0] !== undefined){
+    if (selecionado[0] !== undefined){
       let size = selecionado[0].style.fontSize;
     switch(elem.innerText) {
       case 'exposure_neg_1':
@@ -63,7 +63,6 @@ icones.forEach((elem) => {
         selecionado[0].style.fontSize = `${parseInt(size.slice(0, size.length-2)) + 1}px`;
         break;
       case 'format_bold':
-        console.log(selecionado[0].style.fontWeight == 'normal')
         selecionado[0].style.fontWeight == 'normal' ? selecionado[0].style.fontWeight = 'bold' : selecionado[0].style.fontWeight = 'normal';
         break;  
       case 'format_align_center':
