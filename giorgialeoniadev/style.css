@@ -115,10 +115,6 @@ body {
     font-size: 15px;
 }
 
-#textocima {
-    padding: 3px;
-}
-
-#textobaixo {
+#textocima #textobaixo  {
     padding: 3px;
 }
