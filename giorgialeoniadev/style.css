@@ -18,6 +18,7 @@ body {
     height: 100%;
     margin: auto;
     padding: 30px;
+    box-shadow: 0.1em 0.1em 0.2em black;
 }
 
 #file {
@@ -105,10 +106,19 @@ body {
     background: white;
      text-align: center;
      font-family: sans-serif;
+     box-shadow: 0.1em 0.1em 0.2em black;
  }
 
 #dimensao {
     text-align: center;
     font-family: sans-serif;
     font-size: 15px;
+}
+
+#textocima {
+    padding: 3px;
+}
+
+#textobaixo {
+    padding: 3px;
 }
