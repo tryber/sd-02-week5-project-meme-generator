@@ -1,0 +1,16 @@
+
+#myCanvas{
+  background-color:pink;
+  margin:auto;
+  width:100%;
+  min-width:300px;
+}
+.scaletool{
+  border:1px pink;
+  border-bottom-style:dotted;
+  margin:0 10%;
+  padding:10px;
+}
+#save {
+  display: none;
+}
