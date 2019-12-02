@@ -178,13 +178,13 @@ h2 {
 .textUp {
   width: 100%;
   height: auto;
-  top: 270px;
+  top: 70px;
 }
 
 .textDown {
   width: 100%;
   height: auto;
-  top: 70px;
+  top: 270px;
 }
 
 .opcoes {
