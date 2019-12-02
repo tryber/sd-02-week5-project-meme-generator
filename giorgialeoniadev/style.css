@@ -39,7 +39,7 @@ body {
     height: 90px;
 }
 
-#options{
+#options {
     align-items: center;
 }
 
@@ -61,13 +61,13 @@ body {
     clear: both;
 }
 
-.inputtexto{
+.inputtexto {
     font-size: 20px;
     font-family: sans-serif;
 }
 
 #textofinalcima {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
     font-size: 30px;
     margin-left: 18px;
     margin-top: 20px;
@@ -81,9 +81,9 @@ body {
     max-width: 380px;
     display: flex;
     justify-content: center;
- }
+}
 
- #textofinalbaixo {
+#textofinalbaixo {
     font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
     font-size: 30px;
     margin-left: 18px;
@@ -97,15 +97,15 @@ body {
     text-transform: uppercase;
     text-shadow: 0.1em 0.1em 0.2em black;
     max-width: 380px;
- }
+}
 
 .rodape {
-    margin-top: 10px; 
+    margin-top: 10px;
     background: white;
     text-align: center;
     font-family: sans-serif;
     box-shadow: 0.1em 0.1em 0.2em black;
- }
+}
 
 #dimensao {
     text-align: center;

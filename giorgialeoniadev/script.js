@@ -14,8 +14,7 @@ imguser.addEventListener('change', function (event) {
 // Se o usuário escolher uma das imagens ofertadas na página
 function printar() {
     const img = document.getElementsByClassName('imgcarregadas');
-    console.log(img)
-    for (const click of img) {
+    for (const click of img){
         click.addEventListener('click', function (event) {
             resultado.src = event.target.src
         });
