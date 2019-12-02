@@ -10,24 +10,45 @@
 </head>
 
 <body>
-  <h1 id="titulo">Projeto Meme Generator</h1>
 
-  <div class="container">
+  <header>
+    <h1 id="topo" class="titulo">
+      Projeto Meme Generator
+    </h1>
+  </header>
+
+  <section class="container">
     <form class="centralizar">
-      <span class="texto-info">Digite a frase: </span>
-      <input class="caixa-texto-input" type="text" name="frase" placeholder="Digite aqui sua frase" maxlength="100" size="60">
+      <label for="caixa-input">
+        <h2 class="texto-info">Digite a frase: </h2></label>
+      <input class="caixa-texto-input" id="caixa-input" type="text" name="frase" placeholder="Digite aqui sua frase"
+        maxlength="100" size="60">
       <span class="texto-info">Selecione uma foto:</span>
       <input class="esconder-caixa" type="file" id="botao-foto">
-      <label for="botao-foto"><h2>Clica aqui!</h2></label>
+      <label for="botao-foto">
+        <h3>Clica aqui!</h3>
+      </label>
     </form>
-  </div>
+  </section>
 
-  <div class="container container-foto">
-    <img id="img-foto">
+  <section class="container container-foto">
+    <img id="img-foto" alt="foto escolhida pelo usuário como imagem para o gerador de memes">
+    <h2 class="esconder-caixa">Meme criado</h2>
     <div class="texto-alto"></div>
     <div class="texto-baixo"></div>
-  </div>
-
+  </section>
+  <footer class="rodape">
+    <hr>
+    <h3 class="texto-rodape">
+      Projeto da 5a. Semana - JavaScript - Johnatas Henrique
+    </h3>
+    <p class="texto-rodape">
+      <strong>#vqv #goTrybe</strong> -
+      <a class="voltar-topo" href="#topo">
+        Voltar ao Topo
+      </a>
+    </p>
+  </footer>
 
   <script src='js/script.js'></script>
 </body>
