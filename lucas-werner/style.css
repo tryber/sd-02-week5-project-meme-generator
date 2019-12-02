@@ -23,14 +23,14 @@
   color: white;
   letter-spacing: 1px;
   text-shadow:2px 2px 0 black,
-  -2px -2px 0 black,
-  2px -2px 0 black,
-  -2px 2px 0 black,
-  0px 2px 0 black,
-  2px 0px 0 black,
-  0px -2px 0 black,
-  -2px 0px 0 black,
-  2px 2px 5px black;
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    0px 2px 0 black,
+    2px 0px 0 black,
+    0px -2px 0 black,
+    -2px 0px 0 black,
+    2px 2px 5px black;
   word-break: break-all;
 }
 #upper-txt {
@@ -47,14 +47,14 @@
   color: white;
   letter-spacing: 1px;
   text-shadow: 2px 2px 0 black,
-  -2px -2px 0 black,
-  2px -2px 0 black,
-  -2px 2px 0 black,
-  0px 2px 0 black,
-  2px 0px 0 black,
-  0px -2px 0 black,
-  -2px 0px 0 black,
-  2px 2px 5px black;
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    0px 2px 0 black,
+    2px 0px 0 black,
+    0px -2px 0 black,
+    -2px 0px 0 black,
+    2px 2px 5px black;
 }
 .texto {
   font-family: arial;
@@ -63,14 +63,14 @@
   color: white;
   letter-spacing: 1px;
   text-shadow: 2px 2px 0 black,
-  0px 1px 0 black,
-  1px 0px 0 black,
-  2px 0px 0 black,
-  0px 0px 0 black,
-  1px 0px 0 black,
-  0px 2px 0 black,
-  0px 0px 0 black,
-  2px 2px 5px black;
+    0px 1px 0 black,
+    1px 0px 0 black,
+    2px 0px 0 black,
+    0px 0px 0 black,
+    1px 0px 0 black,
+    0px 2px 0 black,
+    0px 0px 0 black,
+    2px 2px 5px black;
 }
 .form-content {
   margin-top: 20px;

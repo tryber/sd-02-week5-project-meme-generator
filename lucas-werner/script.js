@@ -20,21 +20,19 @@ function criarTextoBaixo () {
   document.getElementById('lower-txt').innerHTML = selecionarTextoBaixo.value;
 };
 function tamanhoLetra() {
-  if (this.id == 'upsize') {
-      if (selecionarTexto[0].offsetHeight < 380 && selecionarTexto[1].offsetHeight < 380) {
-          selecionarTexto[0].style.fontSize = (parseInt(selecionarTexto[0].style.fontSize) + 5 + 'px');
-          selecionarTexto[1].style.fontSize = (parseInt(selecionarTexto[1].style.fontSize) + 5 + 'px');
-      }
-  };
-  if (this.id == 'downsize') {
-      selecionarTexto[0].style.fontSize = (parseInt(selecionarTexto[0].style.fontSize) - 5 + 'px');
-      selecionarTexto[1].style.fontSize = (parseInt(selecionarTexto[1].style.fontSize) - 5 + 'px');
+  switch (this.id) {
+  case 'upsize':
+    selecionarTexto[0].style.fontSize = (parseInt(selecionarTexto[0].style.fontSize) + 5 + 'px');
+    selecionarTexto[1].style.fontSize = (parseInt(selecionarTexto[1].style.fontSize) + 5 + 'px');
+    break
+  case 'downsize':
+    selecionarTexto[0].style.fontSize = (parseInt(selecionarTexto[0].style.fontSize) - 5 + 'px');
+    selecionarTexto[1].style.fontSize = (parseInt(selecionarTexto[1].style.fontSize) - 5 + 'px');
+    break
   }
-}
-selecionarImagem.addEventListener('change',criarImagem); 
-selecionarTextoCima.addEventListener('input',function ()    {criarTextoCima ()
-});   
-selecionarTextoBaixo.addEventListener ('input', function()  {criarTextoBaixo ()
-});
+};
+selecionarImagem.addEventListener('change', criarImagem); 
+selecionarTextoCima.addEventListener('input', criarTextoCima);
+selecionarTextoBaixo.addEventListener ('input', criarTextoBaixo);
 clickDownsize.addEventListener('click', tamanhoLetra);
 clickUpsize.addEventListener('click', tamanhoLetra);
