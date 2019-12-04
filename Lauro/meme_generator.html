@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>LANSA A BRABA MEME GENERATOR</title>
+	<link rel="stylesheet" type="text/css" href="lauro-meme-generator.css">
+</head>
+<body>
+	<section id = 'esquerda'>
+		<div id='título'>
+			<h1>LANSA</h1>
+			<h1>A</h1> 
+			<h1>BRABA</h1>
+			<h2>Meme generator</h2>
+		</div>
+		<p>Insira sua imagem</p>
+		<input type="file" id="escolhe-arquivo" accept="image/*" onchange='abreArquivo(event)'><br>
+	    </p>Insira o texto desejado<p> 
+	    <input type="text" id="insere-texto-cima"><br>
+	</section>
+	<section>
+    <div id = "quadrado-meme">
+		<div id='texto-meme'></div>
+		<img id="base-meme" height=500px width=500px></img>
+	</div>
+	</section>
+</body>
+<script src="lauro-meme-generator.js"></script>
+
+</html>
