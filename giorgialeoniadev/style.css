@@ -1,0 +1,118 @@
+body {
+    background: url('./background.jpg');
+}
+
+.titulo {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Funny\ &\ Cute';
+    src: url( 'Funny\ &\ Cute.ttf' ) format('truetype');
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+
+.corpopai {
+    border: solid rgb( 109, 84, 60 ) 3px;
+    background: white;
+    height: 100%;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0.1em 0.1em 0.2em black;
+}
+
+#file {
+    padding-left: 150px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.explica {
+    font-family: sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 22px;
+}
+
+.imgcarregadas {
+    width: 90px;
+    height: 90px;
+}
+
+#options {
+    align-items: center;
+}
+
+.resultado {
+    border: rgb( 225, 161, 63 ) dotted 3px;
+    width: 400px;
+    height: 400px;
+    float: left;
+    position: absolute;
+}
+
+.foto {
+    float: right;
+    width: 600px;
+    height: 400px;
+}
+
+.acertar {
+    clear: both;
+}
+
+.inputtexto {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#textofinalcima {
+    font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
+    font-size: 30px;
+    margin-left: 18px;
+    margin-top: 20px;
+    color: white;
+    position: absolute;
+    word-break: break-all;
+    z-index: 999;
+    padding: 10;
+    text-transform: uppercase;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    max-width: 380px;
+    display: flex;
+    justify-content: center;
+}
+
+#textofinalbaixo {
+    font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
+    font-size: 30px;
+    margin-left: 18px;
+    margin-top: 320px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    word-break: break-all;
+    z-index: 1000;
+    padding: 10;
+    text-transform: uppercase;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    max-width: 380px;
+}
+
+.rodape {
+    margin-top: 10px;
+    background: white;
+    text-align: center;
+    font-family: sans-serif;
+    box-shadow: 0.1em 0.1em 0.2em black;
+}
+
+#dimensao {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+#textocima #textobaixo  {
+    padding: 3px;
+}

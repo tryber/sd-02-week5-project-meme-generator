@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Meme Generator</title>
+</head>
+
+<body>
+    <header class="titulo">
+        <h1>MEME GENERATOR</h1>
+    </header>
+
+    <article class="corpopai">
+        <!--Resultado-->
+        <section class="fim">
+            <p id="textofinalcima"></p>
+            <p id="textofinalbaixo"></p>
+            <img id="output" class="resultado" />
+        </section>
+        <!--Escolhendo imagem do computador-->
+        <section class="foto">
+            <p class="explica">Insira uma imagem e divirta-se!<br></p>
+            <input input type="file" accept="image/*" name="image" id="file">
+            <p id="dimensao">Sua imagem será automaticamente redimensionada para 400x400px para se encaixar ao formato do gerador de memes.</p>
+            <!--Imagens pré-carregadas-->
+            <section id="options">
+                <p class="explica">Não quer usar uma imagem do seu computador? Crie seu meme com essas imagens prontas
+                    para serem
+                    estilizadas: </p>
+                <img src="imagem1.jpg" value="foto1" class="imgcarregadas">
+                <img src="imagem2.jpg" value="foto2" class="imgcarregadas">
+                <img src="imagem3.jpg" value="foto3" class="imgcarregadas">
+                <img src="imagem4.jpg" value="foto4" class="imgcarregadas">
+                <img src="imagem5.png" value="foto5" class="imgcarregadas">
+            </section>
+            <!--Inserção de texto-->
+            <section>
+                <span class="inputtexto">Digite o texto que ficará na parte superior:</span>
+                <input type="text" id="textocima" maxlength="60"><br>
+                <span class="inputtexto">Digite o texto que ficará na parte inferior:</span>
+                <input type="text" id="textobaixo" maxlength="50"><br>
+            </section>
+        </section>
+        <div class="acertar"></div>
+    </article>
+
+    <footer class="rodape">Página desenvolvida por <a target="_blank" href="https://giorgialeoniadev.github.io/">Giorgia Leonia</a> em Novembro de 2019.</footer>
+    <script src="script.js"></script>
+</body>
+</html>
