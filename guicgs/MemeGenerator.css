@@ -1,0 +1,39 @@
+#caixa {
+  border: 0.4rem;
+  border-style: solid;
+  border-color: black;
+  margin: auto;
+  width: 35rem;
+  height: 35rem;
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+}
+
+#caixa img {
+  width: 35rem;
+  height: 35rem;
+}
+
+.textos {
+  position: absolute;
+  width: 85%;
+  color: white;
+  font-size: 2.5rem;
+  font-family: Impact , sans-serif;
+  font-weight: 1000;
+  text-shadow: 0.08rem 0.08rem 1rem black;
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: black;
+}
+
+#textoCima {
+  margin: 2.5rem 2.5rem 1rem;
+  align-self: flex-start;
+}
+
+#textoBaixo {
+  margin: 1rem 2.5rem 3rem;
+  align-self: flex-end;
+}
