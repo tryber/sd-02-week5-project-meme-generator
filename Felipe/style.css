@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+@font-face {
+  font-family: android7;
+  src: url( '../Felipe/font-family/membra.ttf' );
+}
+
+@font-face {
+  font-family: nfsunder;
+  src: url( '../Felipe/font-family/UndergroundNF.ttf' );
+}
+
+@font-face {
+  font-family: cowboy;
+  src: url( '../Felipe/font-family/Cowboys.ttf' );
+}
+
+@font-face {
+  font-family: corleone;
+  src: url( '../Felipe/font-family/Corleone.ttf' );
+}
+
+body {
+  background-image: url( './images/memesbackground.jpg' );
+  background-size: 108%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-clip: border-box;
+}
+
+.header {
+  margin-top: 50px;
+}
+
+.caixaTitulo1 {
+  width: 100%;
+  text-align: center;
+}
+
+.titulo1 {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.caixaFilhoTitulo1 {
+  width: fit-content;
+  font-family: android7 , sans-serif;
+  font-size: 100px;
+  color: violet;
+}
+
+.titulo2 {
+  font-family: corleone , sans-serif;
+  font-size: 4em;
+}
+
+.titulo3 {
+  font-size: 50px;
+  font-family: nfsunder , sans-serif;
+}
+
+.caixaTitulo3 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.caixaForm {
+  text-align: center;
+  font-size: 30px;
+}
+
+.tituloForm {
+  font-family: cowboy , sans-serif;
+  font-size: 1.5em;
+}
+
+.caixaTexto {
+  width: 80%;
+  height: 20%;
+  font-size: 2em;
+  display: inline-block;
+}
+
+.caixaLimit {
+  width: fit-content;
+  display: inline-block;
+}
+
+.caixaLimitFilho {
+  border: 20px double green;
+}
+
+.side {
+  border: 2px solid red;
+  background-color: white;
+  float: right;
+  margin: 20px 10px 10px;
+  width: 20%;
+  text-align: center;
+}
+
+.art {
+  border-top: 12px groove red;
+  border-left: 12px groove red;
+  border-bottom: 12px ridge red;
+  border-right: 12px ridge red;
+  float: left;
+  margin: 20px 5px 20px 20px;
+  width: 75%;
+  background-color: rgba( 255 , 255 , 255 , 0.85 );
+  background-blend-mode: lighten;
+}
+
+.selecFoto {
+  font-family: corleone , sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+
+.caixaBotao {
+  text-align: center;
+}
+
+.caixaBotaoFilho {
+  border: 2px solid blue;
+  position: absolute;
+  left: -10000px;
+}
+
+.tituloClick {
+  background-color: purple;
+  color: white;
+  display: inline-block;
+  padding: 3px;
+  border: 2px solid rgb( 182 , 72 , 182 );
+  margin-bottom: 3px;
+}
+
+.tituloClick:hover {
+  color: rgb( 116 , 26 , 143 );
+  background-color: green;
+  border: 10px groove blue;
+}
+
+.caixaPaiDentroArt {
+  border: 20px groove blue;
+}
+
+.caixaDentroArt {
+  border-top: 15px dashed blue;
+  border-left: 15px dashed blue;
+  border-right: 15px dashed blue;
+}
+
+.caixaDentroArtFilho {
+  border-top: 20px groove red;
+  border-left: 20px groove red;
+  border-right: 20px groove red;
+  margin-bottom: auto;
+}
+
+.imagemTotal {
+  text-align: center;
+  width: 100%;
+}
+
+.imagemUnica {
+  width: 100%;
+}
+
+.posTexto {
+  border: 10px groove green;
+  padding: 10px;
+  width: 60%;
+  margin-left: 18%;
+  position: relative;
+}
+
+.textoNaImagem {
+  font-size: 500%;
+  color: white;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  padding: 0 3%;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: nfsunder , sans-serif;
+}
+
+.rodape {
+  border: 2px solid red;
+  bottom: 0;
+  text-align: center;
+  font-size: 2em;
+  background-color: rgba( 255 , 255 , 255 , 0.85 );
+}
