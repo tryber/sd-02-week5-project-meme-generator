@@ -59,7 +59,7 @@ textoCima.addEventListener('input', parteCima);
 function parteCima() {
     let selecionarTextoNoMeme = document.getElementById('escritoCima')
     selecionarTextoNoMeme.innerHTML = textoCima.value
-    if (selecionarTextoNoMeme.innerHTML.length > 5) {
+    if (selecionarTextoNoMeme.innerHTML.length > 100) {
         alert('Você não está escrevendo uma bíblia!');
         let cortado = selecionarTextoNoMeme.innerHTML.slice(0, -1);
         textoCima.value = cortado;
@@ -70,7 +70,7 @@ textoBaixo.addEventListener('input', parteBaixo)
 function parteBaixo() {
     let selecionarTextoNoMeme = document.getElementById('escritoBaixo')
     selecionarTextoNoMeme.innerHTML = textoBaixo.value
-    if (selecionarTextoNoMeme.innerHTML.length > 5) {
+    if (selecionarTextoNoMeme.innerHTML.length > 100) {
         alert('Você não está escrevendo uma bíblia!')
         let cortado = selecionarTextoNoMeme.innerHTML.slice(0, -1);
         textoBaixo.value = cortado;
