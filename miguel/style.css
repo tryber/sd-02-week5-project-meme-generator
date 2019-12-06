@@ -5,9 +5,10 @@
 }
 .corpo-do-texto {
     position: absolute;
-    bottom: 0;
+    top: 470px;
     margin-left: 10px;
     max-width: 57.6%;
+    max-height: 170px;
     text-align: center;
     overflow: hidden;
 }
