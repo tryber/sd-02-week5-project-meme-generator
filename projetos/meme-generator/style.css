@@ -25,6 +25,7 @@ body{
 
 #recebe-meme{
     position: absolute;
+    top: 350px;
     width: 100%;
     height: 150px;
     text-align: center;
