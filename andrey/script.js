@@ -13,12 +13,18 @@ const btnReset = document.querySelector('button.reset');
 const btnResetSpan = document.querySelector('button.reset span');
 const btnResetIcon = document.querySelector('button.reset .material-icons');
 const icones = document.querySelectorAll('.optionsText i');
-const selecionado = [];
-
+const selecionado = {
+  element: {},
+  select() { this.element.style.borderStyle = 'dashed' },
+  unselect() { this.element.style.borderStyle = 'none' }
+          };
+const unselect = document.createElement('p');
 const moldura = document.querySelectorAll('.moldura .material-icons');
 
+selecionado.element = unselect;
+
 function condicionMoldura(condicao, border) {
-  if (condicao) {image.className = ''; image.classList.add(border);}  
+  if (condicao) { image.className = ''; image.classList.add(border); }
 }
 
 moldura.forEach((elem) => {
@@ -38,47 +44,52 @@ inputDown.addEventListener('input', () => {
 });
 
 function condicaoTextUpDown(condicao, e, color) {
-  if (condicao) {e.target.style.backgroundColor = color; }
+  if (condicao) { e.target.style.backgroundColor = color; }
 }
 
-;[textUp, textDown].forEach((elem) => {
-  ;['mouseover','mouseleave','click'].forEach((eventName) => {
+
+[textUp, textDown].forEach((elem) => {
+  ['mouseover','mouseleave','click'].forEach((eventName) => {
       elem.addEventListener(eventName, (e) => {
         condicaoTextUpDown(e.type === 'mouseover', e, 'black');
         condicaoTextUpDown(e.type === 'mouseleave', e, 'transparent');
-        if (e.type === 'click') { selecionado.pop(); selecionado.push(e.target); }
+        if (e.type === 'click') { selecionado.unselect(); selecionado.element = elem; selecionado.select();}
     });
   });
 });
 
+
+
 icones.forEach((elem) => {
-  elem.addEventListener('click', (e) => {
+  elem.addEventListener('click', () => {
     if (selecionado[0] !== undefined){
-      let size = selecionado[0].style.fontSize;
-    switch(elem.innerText) {
-      case 'exposure_neg_1':
-        selecionado[0].style.fontSize = `${parseInt(size.slice(0, size.length-2)) - 1}px`;
-        break;
-      case 'exposure_plus_1':
-        selecionado[0].style.fontSize = `${parseInt(size.slice(0, size.length-2)) + 1}px`;
-        break;
-      case 'format_bold':
-        selecionado[0].style.fontWeight == 'normal' ? selecionado[0].style.fontWeight = 'bold' : selecionado[0].style.fontWeight = 'normal';
-        break;  
-      case 'format_align_center':
-        selecionado[0].style.textAlign = 'center';
-        break; 
-      case 'format_align_left':
-        selecionado[0].style.textAlign = 'left';
-        break; 
-      case 'format_align_right':
-        selecionado[0].style.textAlign = 'right';
-        break;    
-      default:
-        console.log();
-      }
+      const size = selecionado[0].style.fontSize;
+      switch(elem.innerText) {
+        case 'exposure_neg_1':
+          selecionado[0].style.fontSize = `${parseInt(size.slice(0, size.length-2), 10) - 1}px`;
+          sizeSwitchCase(-1);
+          break;
+        case 'exposure_plus_1':
+          selecionado[0].style.fontSize = `${parseInt(size.slice(0, size.length-2), 10) + 1}px`;
+          sizeSwitchCase(+1);
+          break;
+        case 'format_bold':
+          selecionado[0].style.fontWeight == 'normal' ? selecionado[0].style.fontWeight = 'bold' : selecionado[0].style.fontWeight = 'normal';
+          break;
+        case 'format_align_center':
+          selecionado[0].style.textAlign = 'center';
+          break;
+        case 'format_align_left':
+          selecionado[0].style.textAlign = 'left';
+          break;
+        case 'format_align_right':
+          selecionado[0].style.textAlign = 'right';
+          break;
+        default:
+          console.log();
+        }
     }
-});
+  });
 });
 
 opcoes.querySelectorAll('figure').forEach((item) => {
@@ -95,16 +106,16 @@ function styelResetBtn( color1, color2) {
 
 btnReset.addEventListener('mouseleave', styelResetBtn('white', '#072742'));
 btnReset.addEventListener('mouseover', styelResetBtn('#072742', 'white'));
-      
+
 function dropAreaAddEventListener(eventName, param){
   dropArea.addEventListener(eventName, param, false);
 }
 
-;['mouseover','dragenter', 'dragover'].forEach((eventName) => {
+['mouseover','dragenter', 'dragover'].forEach((eventName) => {
   dropAreaAddEventListener(eventName, highlight);
 });
 
-;['mouseleave','dragleave', 'drop'].forEach((eventName) => {
+['mouseleave','dragleave', 'drop'].forEach((eventName) => {
   dropAreaAddEventListener(eventName, unhighlight);
 });
 

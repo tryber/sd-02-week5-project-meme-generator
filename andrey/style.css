@@ -123,9 +123,8 @@ h2 {
 
 .meme {
   height: 380px;
-  position: absolute;
+  position: relative;
   top: 70px;
-  left: 50%;
   box-sizing: border-box;
 }
 
