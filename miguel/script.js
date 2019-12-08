@@ -23,13 +23,18 @@ let botaoDiminuirLetra = document.getElementById("diminuir-letra");
 botaoAumentarLetra.addEventListener('click', function() {
     let fontSizeAtual = parseInt(getComputedStyle(textoMemeDown).fontSize.substring(0, 2));
     let maxHeightAtual = parseInt(getComputedStyle(textoMemeDown).maxHeight.substring(0, 3));
+    let topAtual = parseInt(getComputedStyle(textoMemeDown).top.substring(0, 3));
+
     if (fontSizeAtual < 60) {
         let fontSizeNovo = 4 + fontSizeAtual;
-        let maxHeightNovo = 8 + maxHeightAtual
+        let maxHeightNovo = 8 + maxHeightAtual;
+        let topNovo = -8 + topAtual;
+
         textoMemeDown.style.fontSize = fontSizeNovo.toString() + 'px';
         textoMemeUp.style.fontSize = fontSizeNovo.toString() + 'px';
         textoMemeDown.style.maxHeight = maxHeightNovo.toString() + 'px';
         textoMemeUp.style.maxHeight = maxHeightNovo.toString() + 'px';
+        textoMemeDown.style.top = topNovo.toString() + 'px';
     }
     else {
         alert("Tamanho maximo!");
@@ -38,13 +43,18 @@ botaoAumentarLetra.addEventListener('click', function() {
 botaoDiminuirLetra.addEventListener('click', function() {
     let fontSizeAtual = parseInt(getComputedStyle(textoMemeDown).fontSize.substring(0, 2));
     let maxHeightAtual = parseInt(getComputedStyle(textoMemeDown).maxHeight.substring(0, 3));
+    let topAtual = parseInt(getComputedStyle(textoMemeDown).top.substring(0, 3));
+
     if (fontSizeAtual > 40) {
         let fontSizeNovo = -4 + fontSizeAtual;
-        let maxHeightNovo = -8 + maxHeightAtual
+        let maxHeightNovo = -8 + maxHeightAtual;
+        let topNovo = 8 + topAtual;
+
         textoMemeDown.style.fontSize = fontSizeNovo.toString() + 'px';
         textoMemeUp.style.fontSize = fontSizeNovo.toString() + 'px';
         textoMemeDown.style.maxHeight = maxHeightNovo.toString() + 'px';
         textoMemeUp.style.maxHeight = maxHeightNovo.toString() + 'px';
+        textoMemeDown.style.top = topNovo.toString() + 'px';
     }
     else {
         alert("Tamanho minimo!");
