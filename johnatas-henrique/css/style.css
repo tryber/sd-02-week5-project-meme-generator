@@ -104,6 +104,7 @@ body {
 .texto-baixo {
   height: 95%;
   position: relative;
+  word-wrap: break-word;
 }
 
 .texto-meme-baixo {
