@@ -18,6 +18,7 @@ const selecionado = {
   select() { this.element.style.borderStyle = 'dashed' },
   unselect() { this.element.style.borderStyle = 'none' }
           };
+
 const unselect = document.createElement('p');
 const moldura = document.querySelectorAll('.moldura .material-icons');
 
@@ -62,33 +63,34 @@ function condicaoTextUpDown(condicao, e, color) {
 
 icones.forEach((elem) => {
   elem.addEventListener('click', () => {
-    if (selecionado[0] !== undefined){
-      const size = selecionado[0].style.fontSize;
+    console.log(selecionado.element.style)
+    if (selecionado.element.style !== undefined) {
+      const size = selecionado.element.style.fontSize;
       switch(elem.innerText) {
         case 'exposure_neg_1':
-          selecionado[0].style.fontSize = `${parseInt(size.slice(0, size.length-2), 10) - 1}px`;
+          selecionado.element.style.fontSize = `${parseInt(size.slice(0, size.length-2), 10) - 1}px`;
           sizeSwitchCase(-1);
           break;
         case 'exposure_plus_1':
-          selecionado[0].style.fontSize = `${parseInt(size.slice(0, size.length-2), 10) + 1}px`;
+          selecionado.element.style.fontSize = `${parseInt(size.slice(0, size.length-2), 10) + 1}px`;
           sizeSwitchCase(+1);
           break;
         case 'format_bold':
-          selecionado[0].style.fontWeight == 'normal' ? selecionado[0].style.fontWeight = 'bold' : selecionado[0].style.fontWeight = 'normal';
+          selecionado.element.style.fontWeight == 'normal' ? selecionado.element.style.fontWeight = 'bold' : selecionado.element.style.fontWeight = 'normal';
           break;
         case 'format_align_center':
-          selecionado[0].style.textAlign = 'center';
+          selecionado.element.style.textAlign = 'center';
           break;
         case 'format_align_left':
-          selecionado[0].style.textAlign = 'left';
+          selecionado.element.style.textAlign = 'left';
           break;
         case 'format_align_right':
-          selecionado[0].style.textAlign = 'right';
+          selecionado.element.style.textAlign = 'right';
           break;
         default:
           console.log();
         }
-    }
+      }
   });
 });
 
