@@ -1,0 +1,47 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: inherit;
+    background-image: url(https://d32dsh9a6dg9hg.cloudfront.net/wp-content/uploads/sites/2/2019/11/12102312/sun.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#template {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+#meme {
+    border: 2px solid #333;
+}
+
+.fullwidth {
+    width: 100%;
+    max-width: 500px;
+    max-height: 800px;
+}
+
+#imgFile {
+    display: none;
+}
+
+input[type='text'],
+input[type='range'] {
+    width: 100%;
+}
+
+h3>i.fa {
+    margin-right: .2em;
+}
+
+#canvasWrapper {
+    border: black solid 5px;
+}
