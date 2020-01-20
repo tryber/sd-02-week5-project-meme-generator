@@ -1,16 +1,42 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
 
-#myCanvas{
-  background-color:pink;
-  margin:auto;
-  width:100%;
-  min-width:300px;
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://d32dsh9a6dg9hg.cloudfront.net/wp-content/uploads/sites/2/2019/11/12102312/sun.jpg);
+    background-position: center;
+    background-size: cover;
 }
-.scaletool{
-  border:1px pink;
-  border-bottom-style:dotted;
-  margin:0 10%;
-  padding:10px;
+
+#template {
+    background-color: rgb(0, 0, 0, 0.2);
 }
-#save {
-  display: none;
+
+#meme {
+    border: 2px solid #333;
+}
+
+.fullwidth {
+    width: 100%;
+    max-width: 500px;
+    max-height: 800px;
+}
+
+#imgFile {
+    display: none;
+}
+
+input[type='text'],
+input[type='range'] {
+    width: 100%;
+}
+
+h3>i.fa {
+    margin-right: .2em;
 }
